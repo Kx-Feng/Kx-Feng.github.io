@@ -1,11 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docs on Xiaoyan Feng</title>
-    <link>http://localhost:1313/docs/</link>
-    <description>Recent content in Docs on Xiaoyan Feng</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Xiaoyan Feng</title><link>http://localhost:1313/docs/</link><description>Recent content in Docs on Xiaoyan Feng</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Arxiv Paper</title><link>http://localhost:1313/docs/arxiv_paper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/arxiv_paper/</guid><description>Arxiv Papers: LLM, Privacy, and Copyright#2024-03-07
+Membership Inference Attacks and Privacy in Topic Modeling
+Nico Manzonelli Wanrong Zhang Salil Vadhan
+abstractabstract: Recent research shows that large language models are susceptible to privacyattacks that infer aspects of the training data. However, it is unclear ifsimpler generative models, like topic models, share similar vulnerabilities. Inthis work, we propose an attack against topic models that can confidentlyidentify members of the training data in Latent Dirichlet Allocation.</description></item><item><title>Arxiv Paper</title><link>http://localhost:1313/docs/pages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/pages/</guid><description>Arxiv Papers: LLM, Privacy, and Copyright#2024-03-07
+Membership Inference Attacks and Privacy in Topic Modeling
+Nico Manzonelli Wanrong Zhang Salil Vadhan
+abstractabstract: Recent research shows that large language models are susceptible to privacyattacks that infer aspects of the training data. However, it is unclear ifsimpler generative models, like topic models, share similar vulnerabilities. Inthis work, we propose an attack against topic models that can confidentlyidentify members of the training data in Latent Dirichlet Allocation.</description></item></channel></rss>
