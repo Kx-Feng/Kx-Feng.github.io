@@ -5,6 +5,8 @@ title: "Vulnerable LLM"
 ---
  <!--more-->
 
+ # Arxiv Papers: Vulnerable LLM
+
 >**_2024-03-20_**
 
 [**Mapping LLM Security Landscapes: A Comprehensive Stakeholder Risk Assessment Proposal**](http://arxiv.org/abs/2403.13309v1)
