@@ -3671,67 +3671,6 @@ title: "Arxiv Paper"
 {{< details "abstract" >}} abstract: In this article, we evaluate computational models of natural language withrespect to the universal statistical behaviors of natural language. Statisticalmechanical analyses have revealed that natural language text is characterizedby scaling properties, which quantify the global structure in the vocabularypopulation and the long memory of a text. We study whether five scalingproperties (given by Zipf's law, Heaps' law, Ebeling's method, Taylor's law,and long-range correlation analysis) can serve for evaluation of computationalmodels. Specifically, we test $n$-gram language models, a probabilisticcontext-free grammar (PCFG), language models based on Simon/Pitman-Yorprocesses, neural language models, and generative adversarial networks (GANs)for text generation. Our analysis reveals that language models based onrecurrent neural networks (RNNs) with a gating mechanism (i.e., long short-termmemory, LSTM; a gated recurrent unit, GRU; and quasi-recurrent neural networks,QRNNs) are the only computational models that can reproduce the long memorybehavior of natural language. Furthermore, through comparison with recentlyproposed model-based evaluation methods, we find that the exponent of Taylor'slaw is a good indicator of model quality.
 {{< /details >}}
 
->**_2019-06-05_**
-
-[**Efficient, Lexicon-Free OCR using Deep Learning**](http://arxiv.org/abs/1906.01969v1)
-
-*Marcin Namysl, Iuliu Konya*
-
-{{< details "abstract" >}} abstract: Contrary to popular belief, Optical Character Recognition (OCR) remains achallenging problem when text occurs in unconstrained environments, likenatural scenes, due to geometrical distortions, complex backgrounds, anddiverse fonts. In this paper, we present a segmentation-free OCR system thatcombines deep learning methods, synthetic training data generation, and dataaugmentation techniques. We render synthetic training data using large textcorpora and over 2000 fonts. To simulate text occurring in complex naturalscenes, we augment extracted samples with geometric distortions and with aproposed data augmentation technique - alpha-compositing with backgroundtextures. Our models employ a convolutional neural network encoder to extractfeatures from text images. Inspired by the recent progress in neural machinetranslation and language modeling, we examine the capabilities of bothrecurrent and convolutional neural networks in modeling the interactionsbetween input elements.
-{{< /details >}}
-
->**_2019-05-30_**
-
-[**Unsupervised Deep Learning by Neighbourhood Discovery**](http://arxiv.org/abs/1904.11567v3)
-
-*Jiabo Huang, Qi Dong, Shaogang Gong, Xiatian Zhu*
-
-{{< details "abstract" >}} abstract: Deep convolutional neural networks (CNNs) have demonstrated remarkablesuccess in computer vision by supervisedly learning strong visual featurerepresentations. However, training CNNs relies heavily on the availability ofexhaustive training data annotations, limiting significantly their deploymentand scalability in many application scenarios. In this work, we introduce ageneric unsupervised deep learning approach to training deep models without theneed for any manual label supervision. Specifically, we progressively discoversample anchored/centred neighbourhoods to reason and learn the underlying classdecision boundaries iteratively and accumulatively. Every single neighbourhoodis specially formulated so that all the member samples can share the sameunseen class labels at high probability for facilitating the extraction ofclass discriminative feature representations during training. Experiments onimage classification show the performance advantages of the proposed methodover the state-of-the-art unsupervised learning models on six benchmarksincluding both coarse-grained and fine-grained object image categorisation.
-{{< /details >}}
-
->**_2019-05-11_**
-
-[**Time-Contrastive Learning Based DNN Bottleneck Features for Text-Dependent Speaker Verification**](http://arxiv.org/abs/1704.02373v3)
-
-*Achintya Kr. Sarkar, Zheng-Hua Tan*
-
-{{< details "abstract" >}} abstract: In this paper, we present a time-contrastive learning (TCL) based bottleneck(BN)feature extraction method for speech signals with an application totext-dependent (TD) speaker verification (SV). It is well-known that speechsignals exhibit quasi-stationary behavior in and only in a short interval, andthe TCL method aims to exploit this temporal structure. More specifically, ittrains deep neural networks (DNNs) to discriminate temporal events obtained byuniformly segmenting speech signals, in contrast to existing DNN based BNfeature extraction methods that train DNNs using labeled data to discriminatespeakers or pass-phrases or phones or a combination of them. In the context ofspeaker verification, speech data of fixed pass-phrases are used for TCL-BNtraining, while the pass-phrases used for TCL-BN training are excluded frombeing used for SV, so that the learned features can be considered generic. Themethod is evaluated on the RedDots Challenge 2016 database. Experimentalresults show that TCL-BN is superior to the existing speaker and pass-phrasediscriminant BN features and the Mel-frequency cepstral coefficient feature fortext-dependent speaker verification.
-{{< /details >}}
-
-[**Time-Contrastive Learning Based Deep Bottleneck Features for Text-Dependent Speaker Verification**](http://arxiv.org/abs/1905.04554v1)
-
-*Achintya kr. Sarkar, Zheng-Hua Tan, Hao Tang, Suwon Shon, James Glass*
-
-{{< details "abstract" >}} abstract: There are a number of studies about extraction of bottleneck (BN) featuresfrom deep neural networks (DNNs)trained to discriminate speakers, pass-phrasesand triphone states for improving the performance of text-dependent speakerverification (TD-SV). However, a moderate success has been achieved. A recentstudy [1] presented a time contrastive learning (TCL) concept to explore thenon-stationarity of brain signals for classification of brain states. Speechsignals have similar non-stationarity property, and TCL further has theadvantage of having no need for labeled data. We therefore present a TCL basedBN feature extraction method. The method uniformly partitions each speechutterance in a training dataset into a predefined number of multi-framesegments. Each segment in an utterance corresponds to one class, and classlabels are shared across utterances. DNNs are then trained to discriminate allspeech frames among the classes to exploit the temporal structure of speech. Inaddition, we propose a segment-based unsupervised clustering algorithm tore-assign class labels to the segments. TD-SV experiments were conducted on theRedDots challenge database. The TCL-DNNs were trained using speech data offixed pass-phrases that were excluded from the TD-SV evaluation set, so thelearned features can be considered phrase-independent. We compare theperformance of the proposed TCL bottleneck (BN) feature with those ofshort-time cepstral features and BN features extracted from DNNs discriminatingspeakers, pass-phrases, speaker+pass-phrase, as well as monophones whose labelsand boundaries are generated by three different automatic speech recognition(ASR) systems. Experimental results show that the proposed TCL-BN outperformscepstral features and speaker+pass-phrase discriminant BN features, and itsperformance is on par with those of ASR derived BN features. Moreover,....
-{{< /details >}}
-
->**_2019-05-04_**
-
-[**Saliency for Fine-grained Object Recognition in Domains with Scarce Training Data**](http://arxiv.org/abs/1808.00262v3)
-
-*Carola Figueroa Flores, Abel Gonzalez-García, Joost van de Weijer, Bogdan Raducanu*
-
-{{< details "abstract" >}} abstract: This paper investigates the role of saliency to improve the classificationaccuracy of a Convolutional Neural Network (CNN) for the case when scarcetraining data is available. Our approach consists in adding a saliency branchto an existing CNN architecture which is used to modulate the standardbottom-up visual features from the original image input, acting as anattentional mechanism that guides the feature extraction process. The main aimof the proposed approach is to enable the effective training of a fine-grainedrecognition model with limited training samples and to improve the performanceon the task, thereby alleviating the need to annotate large dataset. % The vastmajority of saliency methods are evaluated on their ability to generatesaliency maps, and not on their functionality in a complete vision pipeline.Our proposed pipeline allows to evaluate saliency methods for the high-leveltask of object recognition. We perform extensive experiments on variousfine-grained datasets (Flowers, Birds, Cars, and Dogs) under differentconditions and show that saliency can considerably improve the network'sperformance, especially for the case of scarce training data. Furthermore, ourexperiments show that saliency methods that obtain improved saliency maps (asmeasured by traditional saliency benchmarks) also translate to saliency methodsthat yield improved performance gains when applied in an object recognitionpipeline.
-{{< /details >}}
-
->**_2019-04-08_**
-
-[**Diversity in Faces**](http://arxiv.org/abs/1901.10436v6)
-
-*Michele Merler, Nalini Ratha, Rogerio S. Feris, John R. Smith*
-
-{{< details "abstract" >}} abstract: Face recognition is a long standing challenge in the field of ArtificialIntelligence (AI). The goal is to create systems that accurately detect,recognize, verify, and understand human faces. There are significant technicalhurdles in making these systems accurate, particularly in unconstrainedsettings due to confounding factors related to pose, resolution, illumination,occlusion, and viewpoint. However, with recent advances in neural networks,face recognition has achieved unprecedented accuracy, largely built ondata-driven deep learning methods. While this is encouraging, a critical aspectthat is limiting facial recognition accuracy and fairness is inherent facialdiversity. Every face is different. Every face reflects something unique aboutus. Aspects of our heritage - including race, ethnicity, culture, geography -and our individual identify - age, gender, and other visible manifestations ofself-expression, are reflected in our faces. We expect face recognition to workequally accurately for every face. Face recognition needs to be fair. As werely on data-driven methods to create face recognition technology, we need toensure necessary balance and coverage in training data. However, there arestill scientific questions about how to represent and extract pertinent facialfeatures and quantitatively measure facial diversity. Towards this goal,Diversity in Faces (DiF) provides a data set of one million annotated humanface images for advancing the study of facial diversity. The annotations aregenerated using ten well-established facial coding schemes from the scientificliterature. The facial coding schemes provide human-interpretable quantitativemeasures of facial features. We believe that by making the extracted codingschemes available on a large set of faces, we can accelerate research anddevelopment towards creating more fair and accurate facial recognition systems.
-{{< /details >}}
-
->**_2019-04-04_**
-
-[**Active Transfer Learning Network: A Unified Deep Joint Spectral-Spatial Feature Learning Model For Hyperspectral Image Classification**](http://arxiv.org/abs/1904.02454v1)
-
-*Cheng Deng, Yumeng Xue, Xianglong Liu, Chao Li, Dacheng Tao*
-
-{{< details "abstract" >}} abstract: Deep learning has recently attracted significant attention in the field ofhyperspectral images (HSIs) classification. However, the construction of anefficient deep neural network (DNN) mostly relies on a large number of labeledsamples being available. To address this problem, this paper proposes a unifieddeep network, combined with active transfer learning that can be well-trainedfor HSIs classification using only minimally labeled training data. Morespecifically, deep joint spectral-spatial feature is first extracted throughhierarchical stacked sparse autoencoder (SSAE) networks. Active transferlearning is then exploited to transfer the pre-trained SSAE network and thelimited training samples from the source domain to the target domain, where theSSAE network is subsequently fine-tuned using the limited labeled samplesselected from both source and target domain by corresponding active learningstrategies. The advantages of our proposed method are threefold: 1) the networkcan be effectively trained using only limited labeled samples with the help ofnovel active learning strategies; 2) the network is flexible and scalableenough to function across various transfer situations, including cross-datasetand intra-image; 3) the learned deep joint spectral-spatial featurerepresentation is more generic and robust than many joint spectral-spatialfeature representation. Extensive comparative evaluations demonstrate that ourproposed method significantly outperforms many state-of-the-art approaches,including both traditional and deep network-based methods, on three populardatasets.
-{{< /details >}}
-
 >**_2019-03-31_**
 
 [**BlackMarks: Blackbox Multibit Watermarking for Deep Neural Networks**](http://arxiv.org/abs/1904.00344v1)
@@ -3739,130 +3678,6 @@ title: "Arxiv Paper"
 *Huili Chen, Bita Darvish Rouhani, Farinaz Koushanfar*
 
 {{< details "abstract" >}} abstract: Deep Neural Networks have created a paradigm shift in our ability tocomprehend raw data in various important fields ranging from computer visionand natural language processing to intelligence warfare and healthcare. WhileDNNs are increasingly deployed either in a white-box setting where the modelinternal is publicly known, or a black-box setting where only the model outputsare known, a practical concern is protecting the models against IntellectualProperty (IP) infringement. We propose BlackMarks, the first end-to-endmulti-bit watermarking framework that is applicable in the black-box scenario.BlackMarks takes the pre-trained unmarked model and the owner's binarysignature as inputs and outputs the corresponding marked model with a set ofwatermark keys. To do so, BlackMarks first designs a model-dependent encodingscheme that maps all possible classes in the task to bit '0' and bit '1' byclustering the output activations into two groups. Given the owner's watermarksignature (a binary string), a set of key image and label pairs are designedusing targeted adversarial attacks. The watermark (WM) is then embedded in theprediction behavior of the target DNN by fine-tuning the model with generatedWM key set. To extract the WM, the remote model is queried by the WM key imagesand the owner's signature is decoded from the corresponding predictionsaccording to the designed encoding scheme. We perform a comprehensiveevaluation of BlackMarks's performance on MNIST, CIFAR10, ImageNet datasets andcorroborate its effectiveness and robustness. BlackMarks preserves thefunctionality of the original DNN and incurs negligible WM embedding runtimeoverhead as low as 2.054%.
-{{< /details >}}
-
->**_2019-02-25_**
-
-[**Short-term Road Traffic Prediction based on Deep Cluster at Large-scale Networks**](http://arxiv.org/abs/1902.09601v1)
-
-*Lingyi Han, Kan Zheng, Long Zhao, Xianbin Wang, Xuemin Shen*
-
-{{< details "abstract" >}} abstract: Short-term road traffic prediction (STTP) is one of the most importantmodules in Intelligent Transportation Systems (ITS). However, network-levelSTTP still remains challenging due to the difficulties both in modeling thediverse traffic patterns and tacking high-dimensional time series with lowlatency. Therefore, a framework combining with a deep clustering (DeepCluster)module is developed for STTP at largescale networks in this paper. TheDeepCluster module is proposed to supervise the representation learning in avisualized way from the large unlabeled dataset. More specifically, to fullyexploit the traffic periodicity, the raw series is first split into a number ofsub-series for triplets generation. The convolutional neural networks (CNNs)with triplet loss are utilized to extract the features of shape by transferringthe series into visual images. The shape-based representations are then usedfor road segments clustering. Thereafter, motivated by the fact that the roadsegments in a group have similar patterns, a model sharing strategy is furtherproposed to build recurrent NNs (RNNs)-based predictions through a group-basedmodel (GM), instead of individual-based model (IM) in which one model are builtfor one road exclusively. Our framework can not only significantly reduce thenumber of models and cost, but also increase the number of training data andthe diversity of samples. In the end, we evaluate the proposed framework overthe network of Liuli Bridge in Beijing. Experimental results show that theDeepCluster can effectively cluster the road segments and GM can achievecomparable performance against the IM with less number of models.
-{{< /details >}}
-
->**_2019-01-23_**
-
-[**Predicting Parkinson's Disease using Latent Information extracted from Deep Neural Networks**](http://arxiv.org/abs/1901.07822v1)
-
-*Ilianna Kollia, Andreas-Georgios Stafylopatis, Stefanos Kollias*
-
-{{< details "abstract" >}} abstract: This paper presents a new method for medical diagnosis of neurodegenerativediseases, such as Parkinson's, by extracting and using latent information fromtrained Deep convolutional, or convolutional-recurrent Neural Networks (DNNs).In particular, our approach adopts a combination of transfer learning, k-meansclustering and k-Nearest Neighbour classification of deep neural networklearned representations to provide enriched prediction of the disease based onMRI and/or DaT Scan data. A new loss function is introduced and used in thetraining of the DNNs, so as to perform adaptation of the generated learnedrepresentations between data from different medical environments. Results arepresented using a recently published database of Parkinson's relatedinformation, which was generated and evaluated in a hospital environment.
-{{< /details >}}
-
->**_2019-01-14_**
-
-[**Predicting Video Saliency with Object-to-Motion CNN and Two-layer Convolutional LSTM**](http://arxiv.org/abs/1709.06316v3)
-
-*Lai Jiang, Mai Xu, Zulin Wang*
-
-{{< details "abstract" >}} abstract: Over the past few years, deep neural networks (DNNs) have exhibited greatsuccess in predicting the saliency of images. However, there are few works thatapply DNNs to predict the saliency of generic videos. In this paper, we proposea novel DNN-based video saliency prediction method. Specifically, we establisha large-scale eye-tracking database of videos (LEDOV), which providessufficient data to train the DNN models for predicting video saliency. Throughthe statistical analysis of our LEDOV database, we find that human attention isnormally attracted by objects, particularly moving objects or the moving partsof objects. Accordingly, we propose an object-to-motion convolutional neuralnetwork (OM-CNN) to learn spatio-temporal features for predicting theintra-frame saliency via exploring the information of both objectness andobject motion. We further find from our database that there exists a temporalcorrelation of human attention with a smooth saliency transition across videoframes. Therefore, we develop a two-layer convolutional long short-term memory(2C-LSTM) network in our DNN-based method, using the extracted features ofOM-CNN as the input. Consequently, the inter-frame saliency maps of videos canbe generated, which consider the transition of attention across video frames.Finally, the experimental results show that our method advances thestate-of-the-art in video saliency prediction.
-{{< /details >}}
-
->**_2018-12-26_**
-
-[**Deep Convolutional Generative Adversarial Network Based Food Recognition Using Partially Labeled Data**](http://arxiv.org/abs/1812.10179v1)
-
-*Bappaditya Mandal, N. B. Puhan, Avijit Verma*
-
-{{< details "abstract" >}} abstract: Traditional machine learning algorithms using hand-crafted feature extractiontechniques (such as local binary pattern) have limited accuracy because of highvariation in images of the same class (or intra-class variation) for foodrecognition task. In recent works, convolutional neural networks (CNN) havebeen applied to this task with better results than all previously reportedmethods. However, they perform best when trained with large amount of annotated(labeled) food images. This is problematic when obtained in large volume,because they are expensive, laborious and impractical. Our work aims atdeveloping an efficient deep CNN learning-based method for food recognitionalleviating these limitations by using partially labeled training data ongenerative adversarial networks (GANs). We make new enhancements to theunsupervised training architecture introduced by Goodfellow et al. (2014),which was originally aimed at generating new data by sampling a dataset. Inthis work, we make modifications to deep convolutional GANs to make them robustand efficient for classifying food images. Experimental results on benchmarkingdatasets show the superiority of our proposed method as compared to thecurrent-state-of-the-art methodologies even when trained with partially labeledtraining data.
-{{< /details >}}
-
->**_2018-12-07_**
-
-[**Convolutional Neural Network Architectures for Signals Supported on Graphs**](http://arxiv.org/abs/1805.00165v2)
-
-*Fernando Gama, Antonio G. Marques, Geert Leus, Alejandro Ribeiro*
-
-{{< details "abstract" >}} abstract: Two architectures that generalize convolutional neural networks (CNNs) forthe processing of signals supported on graphs are introduced. We start with theselection graph neural network (GNN), which replaces linear time invariantfilters with linear shift invariant graph filters to generate convolutionalfeatures and reinterprets pooling as a possibly nonlinear subsampling stagewhere nearby nodes pool their information in a set of preselected sample nodes.A key component of the architecture is to remember the position of samplednodes to permit computation of convolutional features at deeper layers. Thesecond architecture, dubbed aggregation GNN, diffuses the signal through thegraph and stores the sequence of diffused components observed by a designatednode. This procedure effectively aggregates all components into a stream ofinformation having temporal structure to which the convolution and poolingstages of regular CNNs can be applied. A multinode version of aggregation GNNsis further introduced for operation in large scale graphs. An importantproperty of selection and aggregation GNNs is that they reduce to conventionalCNNs when particularized to time signals reinterpreted as graph signals in acirculant graph. Comparative numerical analyses are performed in a sourcelocalization application over synthetic and real-world networks. Performance isalso evaluated for an authorship attribution problem and text categoryclassification. Multinode aggregation GNNs are consistently the best performingGNN architecture.
-{{< /details >}}
-
->**_2018-12-05_**
-
-[**Learning to generate filters for convolutional neural networks**](http://arxiv.org/abs/1812.01894v1)
-
-*Wei Shen, Rujie Liu*
-
-{{< details "abstract" >}} abstract: Conventionally, convolutional neural networks (CNNs) process different imageswith the same set of filters. However, the variations in images pose achallenge to this fashion. In this paper, we propose to generatesample-specific filters for convolutional layers in the forward pass. Since thefilters are generated on-the-fly, the model becomes more flexible and canbetter fit the training data compared to traditional CNNs. In order to obtainsample-specific features, we extract the intermediate feature maps from anautoencoder. As filters are usually high dimensional, we propose to learn a setof coefficients instead of a set of filters. These coefficients are used tolinearly combine the base filters from a filter repository to generate thefinal filters for a CNN. The proposed method is evaluated on MNIST, MTFL andCIFAR10 datasets. Experiment results demonstrate that the classificationaccuracy of the baseline model can be improved by using the proposed filtergeneration method.
-{{< /details >}}
-
->**_2018-12-04_**
-
-[**Inferring Remote Channel State Information: Cramér-Rao Lower Bound and Deep Learning Implementation**](http://arxiv.org/abs/1812.01223v1)
-
-*Zhiyuan Jiang, Ziyan He, Sheng Chen, Andreas F. Molisch, Sheng Zhou, Zhisheng Niu*
-
-{{< details "abstract" >}} abstract: Channel state information (CSI) is of vital importance in wirelesscommunication systems. Existing CSI acquisition methods usually rely on pilottransmissions, and geographically separated base stations (BSs) withnon-correlated CSI need to be assigned with orthogonal pilots which occupyexcessive system resources. Our previous work adopts a data-driven deeplearning based approach which leverages the CSI at a local BS to infer the CSIremotely, however the relevance of CSI between separated BSs is not specifiedexplicitly. In this paper, we exploit a model-based methodology to derive theCram\'er-Rao lower bound (CRLB) of remote CSI inference given the local CSI.Although the model is simplified, the derived CRLB explicitly illustrates therelationship between the inference performance and several key systemparameters, e.g., terminal distance and antenna array size. In particular, itshows that by leveraging multiple local BSs, the inference error exhibits alarger power-law decay rate (w.r.t. number of antennas), compared with a singlelocal BS; this explains and validates our findings in evaluating thedeep-neural-network-based (DNN-based) CSI inference. We further improve on theDNN-based method by employing dropout and deeper networks, and show aninference performance of approximately $90\%$ accuracy in a realistic scenariowith CSI generated by a ray-tracing simulator.
-{{< /details >}}
-
->**_2018-11-30_**
-
-[**Cosmological constraints from noisy convergence maps through deep learning**](http://arxiv.org/abs/1807.08732v2)
-
-*Janis Fluri, Tomasz Kacprzak, Aurelien Lucchi, Alexandre Refregier, Adam Amara, Thomas Hofmann*
-
-{{< details "abstract" >}} abstract: Deep learning is a powerful analysis technique that has recently beenproposed as a method to constrain cosmological parameters from weak lensingmass maps. Due to its ability to learn relevant features from the data, it isable to extract more information from the mass maps than the commonly usedpower spectrum, and thus achieve better precision for cosmological parametermeasurement. We explore the advantage of Convolutional Neural Networks (CNN)over the power spectrum for varying levels of shape noise and differentsmoothing scales applied to the maps. We compare the cosmological constraintsfrom the two methods in the $\Omega_M-\sigma_8$ plane for sets of 400 deg$^2$convergence maps. We find that, for a shape noise level corresponding to 8.53galaxies/arcmin$^2$ and the smoothing scale of $\sigma_s = 2.34$ arcmin, thenetwork is able to generate 45% tighter constraints. For smaller smoothingscale of $\sigma_s = 1.17$ the improvement can reach $\sim 50 \%$, while forlarger smoothing scale of $\sigma_s = 5.85$, the improvement decreases to 19%.The advantage generally decreases when the noise level and smoothing scalesincrease. We present a new training strategy to train the neural network withnoisy data, as well as considerations for practical applications of the deeplearning approach.
-{{< /details >}}
-
->**_2018-11-27_**
-
-[**AI Matrix - Synthetic Benchmarks for DNN**](http://arxiv.org/abs/1812.00886v1)
-
-*Wei Wei, Lingjie Xu, Lingling Jin, Wei Zhang, Tianjun Zhang*
-
-{{< details "abstract" >}} abstract: Deep neural network (DNN) architectures, such as convolutional neuralnetworks (CNN), involve heavy computation and require hardware, such as CPU,GPU, and AI accelerators, to provide the massive computing power. With the manyvarieties of AI hardware prevailing on the market, it is often hard to decidewhich one is the best to use. Thus, benchmarking AI hardware effectivelybecomes important and is of great help to select and optimize AI hardware.Unfortunately, there are few AI benchmarks available in both academia andindustry. Examples are BenchNN[1], DeepBench[2], and Dawn Bench[3], which areusually a collection of typical real DNN applications. While these benchmarksprovide performance comparison across different AI hardware, they suffer from anumber of drawbacks. First, they cannot adapt to the emerging changes of DNNalgorithms and are fixed once selected. Second, they contain tens to hundredsof applications and take very long time to finish running. Third, they aremainly selected from open sources, which are restricted by copyright and arenot representable to proprietary applications. In this work, a syntheticbenchmarks framework is firstly proposed to address the above drawbacks of AIbenchmarks. Instead of pre-selecting a set of open-sourced benchmarks andrunning all of them, the synthetic approach generates only a one or fewbenchmarks that best represent a broad range of applications using profiledworkload characteristics data of these applications. Thus, it can adapt toemerging changes of new DNN algorithms by re-profiling new applications andupdating itself, greatly reduce benchmark count and running time, and stronglyrepresent DNN applications of interests. The generated benchmarks are called AIMatrix, serving as a performance benchmarks matching the statistical workloadcharacteristics of a combination of applications of interests.
-{{< /details >}}
-
->**_2018-11-12_**
-
-[**Lunar Crater Identification via Deep Learning**](http://arxiv.org/abs/1803.02192v3)
-
-*Ari Silburt, Mohamad Ali-Dib, Chenchong Zhu, Alan Jackson, Diana Valencia, Yevgeni Kissin, Daniel Tamayo, Kristen Menou*
-
-{{< details "abstract" >}} abstract: Crater counting on the Moon and other bodies is crucial to constrain thedynamical history of the Solar System. This has traditionally been done byvisual inspection of images, thus limiting the scope, efficiency, and/oraccuracy of retrieval. In this paper we demonstrate the viability of usingconvolutional neural networks (CNNs) to determine the positions and sizes ofcraters from Lunar digital elevation maps (DEMs). We recover 92% of cratersfrom the human-generated test set and almost double the total number of craterdetections. Of these new craters, 15% are smaller in diameter than the minimumcrater size in the ground-truth dataset. Our median fractional longitude,latitude and radius errors are 11% or less, representing good agreement withthe human-generated datasets. From a manual inspection of 361 new craters weestimate the false positive rate of new craters to be 11%. Moreover, ourMoon-trained CNN performs well when tested on DEM images of Mercury, detectinga large fraction of craters in each map. Our results suggest that deep learningwill be a useful tool for rapidly and automatically extracting craters onvarious Solar System bodies. We make our code and data publicly available athttps://github.com/silburt/DeepMoon.git andhttps://doi.org/10.5281/zenodo.1133969 .
-{{< /details >}}
-
->**_2018-09-05_**
-
-[**Modified Diversity of Class Probability Estimation Co-training for Hyperspectral Image Classification**](http://arxiv.org/abs/1809.01436v1)
-
-*Yan Ju, Lingling Li, Licheng Jiao, Zhongle Ren, Biao Hou, Shuyuan Yang*
-
-{{< details "abstract" >}} abstract: Due to the limited amount and imbalanced classes of labeled training data,the conventional supervised learning can not ensure the discrimination of thelearned feature for hyperspectral image (HSI) classification. In this paper, wepropose a modified diversity of class probability estimation (MDCPE) with twodeep neural networks to learn spectral-spatial feature for HSI classification.In co-training phase, recurrent neural network (RNN) and convolutional neuralnetwork (CNN) are utilized as two learners to extract features from labeled andunlabeled data. Based on the extracted features, MDCPE selects most crediblesamples to update initial labeled data by combining k-means clustering with thetraditional diversity of class probability estimation (DCPE) co-training. Inthis way, MDCPE can keep new labeled data class-balanced and extractdiscriminative features for both the minority and majority classes. Duringtesting process, classification results are acquired by co-decision of the twolearners. Experimental results demonstrate that the proposed semi-supervisedco-training method can make full use of unlabeled information to enhancegenerality of the learners and achieve favorable accuracies on all three widelyused data sets: Salinas, Pavia University and Pavia Center.
-{{< /details >}}
-
->**_2018-07-25_**
-
-[**Supervised and Semi-Supervised Deep Neural Networks for CSI-Based Authentication**](http://arxiv.org/abs/1807.09469v1)
-
-*Qian Wang, Hang Li, Zhi Chen, Dou Zhao, Shuang Ye, Jiansheng Cai*
-
-{{< details "abstract" >}} abstract: From the viewpoint of physical-layer authentication, spoofing attacks can befoiled by checking channel state information (CSI). Existing CSI-basedauthentication algorithms mostly require a deep knowledge of the channel todeliver decent performance. In this paper, we investigate CSI-basedauthenticators that can spare the effort to predetermine channel properties byutilizing deep neural networks (DNNs). We first propose a convolutional neuralnetwork (CNN)-enabled authenticator that is able to extract the local featuresin CSI. Next, we employ the recurrent neural network (RNN) to capture thedependencies between different frequencies in CSI. In addition, we propose touse the convolutional recurrent neural network (CRNN)---a combination of theCNN and the RNN---to learn local and contextual information in CSI for userauthentication. To effectively train these DNNs, one needs a large amount oflabeled channel records. However, it is often expensive to label large channelobservations in the presence of a spoofer. In view of this, we further study acase in which only a small part of the the channel observations are labeled. Tohandle it, we extend these DNNs-enabled approaches into semi-supervised ones.This extension is based on a semi-supervised learning technique that employsboth the labeled and unlabeled data to train a DNN. To be specific, oursemi-supervised method begins by generating pseudo labels for the unlabeledchannel samples through implementing the K-means algorithm in a semi-supervisedmanner. Subsequently, both the labeled and pseudo labeled data are exploited topre-train a DNN, which is then fine-tuned based on the labeled channel records.
-{{< /details >}}
-
-[**Distinctive-attribute Extraction for Image Captioning**](http://arxiv.org/abs/1807.09434v1)
-
-*Boeun Kim, Young Han Lee, Hyedong Jung, Choongsang Cho*
-
-{{< details "abstract" >}} abstract: Image captioning, an open research issue, has been evolved with the progressof deep neural networks. Convolutional neural networks (CNNs) and recurrentneural networks (RNNs) are employed to compute image features and generatenatural language descriptions in the research. In previous works, a captioninvolving semantic description can be generated by applying additionalinformation into the RNNs. In this approach, we propose a distinctive-attributeextraction (DaE) which explicitly encourages significant meanings to generatean accurate caption describing the overall meaning of the image with theirunique situation. Specifically, the captions of training images are analyzed byterm frequency-inverse document frequency (TF-IDF), and the analyzed semanticinformation is trained to extract distinctive-attributes for inferringcaptions. The proposed scheme is evaluated on a challenge data, and it improvesan objective performance while describing images in more detail.
-{{< /details >}}
-
->**_2018-07-04_**
-
-[**Transfer Learning for Clinical Time Series Analysis using Recurrent Neural Networks**](http://arxiv.org/abs/1807.01705v1)
-
-*Priyanka Gupta, Pankaj Malhotra, Lovekesh Vig, Gautam Shroff*
-
-{{< details "abstract" >}} abstract: Deep neural networks have shown promising results for various clinicalprediction tasks such as diagnosis, mortality prediction, predicting durationof stay in hospital, etc. However, training deep networks -- such as thosebased on Recurrent Neural Networks (RNNs) -- requires large labeled data, highcomputational resources, and significant hyperparameter tuning effort. In thiswork, we investigate as to what extent can transfer learning address theseissues when using deep RNNs to model multivariate clinical time series. Weconsider transferring the knowledge captured in an RNN trained on severalsource tasks simultaneously using a large labeled dataset to build the modelfor a target task with limited labeled data. An RNN pre-trained on severaltasks provides generic features, which are then used to build simpler linearmodels for new target tasks without training task-specific RNNs. Forevaluation, we train a deep RNN to identify several patient phenotypes on timeseries from MIMIC-III database, and then use the features extracted using thatRNN to build classifiers for identifying previously unseen phenotypes, and alsofor a seemingly unrelated task of in-hospital mortality. We demonstrate that(i) models trained on features extracted using pre-trained RNN outperform or,in the worst case, perform as well as task-specific RNNs; (ii) the models usingfeatures from pre-trained models are more robust to the size of labeled datathan task-specific RNNs; and (iii) features extracted using pre-trained RNN aregeneric enough and perform better than typical statistical hand-craftedfeatures.
 {{< /details >}}
 
 >**_2018-06-11_**
@@ -3883,15 +3698,6 @@ title: "Arxiv Paper"
 {{< details "abstract" >}} abstract: Deep Learning (DL) models have caused a paradigm shift in our ability tocomprehend raw data in various important fields, ranging from intelligencewarfare and healthcare to autonomous transportation and automatedmanufacturing. A practical concern, in the rush to adopt DL models as aservice, is protecting the models against Intellectual Property (IP)infringement. The DL models are commonly built by allocating significantcomputational resources that process vast amounts of proprietary training data.The resulting models are therefore considered to be the IP of the model builderand need to be protected to preserve the owner's competitive advantage.  This paper proposes DeepSigns, a novel end-to-end IP protection frameworkthat enables insertion of coherent digital watermarks in contemporary DLmodels. DeepSigns, for the first time, introduces a generic watermarkingmethodology that can be used for protecting DL owner's IP rights in bothwhite-box and black-box settings, where the adversary may or may not have theknowledge of the model internals. The suggested methodology is based onembedding the owner's signature (watermark) in the probability density function(pdf) of the data abstraction obtained in different layers of a DL model.DeepSigns can demonstrably withstand various removal and transformationattacks, including model compression, model fine-tuning, and watermarkoverwriting. Proof-of-concept evaluations on MNIST, and CIFAR10 datasets, aswell as a wide variety of neural network architectures including Wide ResidualNetworks, Convolution Neural Networks, and Multi-Layer Perceptrons corroborateDeepSigns' effectiveness and applicability.
 {{< /details >}}
 
->**_2018-05-18_**
-
-[**Mixup-Based Acoustic Scene Classification Using Multi-Channel Convolutional Neural Network**](http://arxiv.org/abs/1805.07319v1)
-
-*Kele Xu, Dawei Feng, Haibo Mi, Boqing Zhu, Dezhi Wang, Lilun Zhang, Hengxing Cai, Shuwen Liu*
-
-{{< details "abstract" >}} abstract: Audio scene classification, the problem of predicting class labels of audioscenes, has drawn lots of attention during the last several years. However, itremains challenging and falls short of accuracy and efficiency. Recently,Convolutional Neural Network (CNN)-based methods have achieved betterperformance with comparison to the traditional methods. Nevertheless,conventional single channel CNN may fail to consider the fact that additionalcues may be embedded in the multi-channel recordings. In this paper, we explorethe use of Multi-channel CNN for the classification task, which aims to extractfeatures from different channels in an end-to-end manner. We conduct theevaluation compared with the conventional CNN and traditional Gaussian MixtureModel-based methods. Moreover, to improve the classification accuracy further,this paper explores the using of mixup method. In brief, mixup trains theneural network on linear combinations of pairs of the representation of audioscene examples and their labels. By employing the mixup approach for dataargumentation, the novel model can provide higher prediction accuracy androbustness in contrast with previous models, while the generalization error canalso be reduced on the evaluation data.
-{{< /details >}}
-
 >**_2018-05-16_**
 
 [**Convolutional Neural Network Architecture for Recovering Watermark Synchronization**](http://arxiv.org/abs/1805.06199v1)
@@ -3899,22 +3705,6 @@ title: "Arxiv Paper"
 *Wook-Hyung Kim, Jong-Uk Hou, Seung-Min Mun, Heung-Kyu Lee*
 
 {{< details "abstract" >}} abstract: Since real-time contents can be captured and downloaded very easily,copyright infringement has become a serious problem. In order to reduce theloss caused by copyright infringement, copyright owners insert a watermark inthe content to protect the copyright using illegal distribution route trackingand copyright authentication. However, whereas many existing watermarkingtechniques are robust to signal distortion such as compression, they arevulnerable to geometric distortion that causes synchronization errors. Inparticular, capturing real-time content in Internet browsers and smartphoneapplications is problematic because geometric distortion such as scaling andtranslation frequently occurs. In this paper, we propose a convolutional neuralnetwork-based template architecture that compensates for the disadvantages ofexisting watermarking techniques that are vulnerable to geometric distortion.The proposed template consists of a template generation network, a templateextraction network, and a template matching network. The template generationnetwork generates a template in the form of noise and the template is insertedinto certain pre-defined spatial locations of the image. The extraction networkdetects spatial locations where the template is inserted in the image. Finally,the template matching network estimates the parameters of the geometricdistortion by comparing the shape of spatial locations where the template wasinserted with the locations where the template was detected. It is possible torecover an image in its original geometrical form using the estimatedparameters, and as a result, watermarks applied using existing watermarkingtechniques that are vulnerable to geometric distortion can be decoded normally.
-{{< /details >}}
-
->**_2018-04-20_**
-
-[**A Deep Representation Empowered Distant Supervision Paradigm for Clinical Information Extraction**](http://arxiv.org/abs/1804.07814v1)
-
-*Yanshan Wang, Sunghwan Sohn, Sijia Liu, Feichen Shen, Liwei Wang, Elizabeth J. Atkinson, Shreyasee Amin, Hongfang Liu*
-
-{{< details "abstract" >}} abstract: Objective: To automatically create large labeled training datasets and reducethe efforts of feature engineering for training accurate machine learningmodels for clinical information extraction. Materials and Methods: We propose adistant supervision paradigm empowered by deep representation for extractinginformation from clinical text. In this paradigm, the rule-based NLP algorithmsare utilized to generate weak labels and create large training datasetsautomatically. Additionally, we use pre-trained word embeddings as deeprepresentation to eliminate the need of task-specific feature engineering formachine learning. We evaluated the effectiveness of the proposed paradigm ontwo clinical information extraction tasks: smoking status extraction andproximal femur (hip) fracture extraction. We tested three prevalent machinelearning models, namely, Convolutional Neural Networks (CNN), Support VectorMachine (SVM), and Random Forrest (RF). Results: The results indicate that CNNis the best fit to the proposed distant supervision paradigm. It outperformsthe rule-based NLP algorithms given large datasets by capturing additionalextraction patterns. We also verified the advantage of word embedding featurerepresentation in the paradigm over term frequency-inverse document frequency(tf-idf) and topic modeling representations. Discussion: In the clinicaldomain, the limited amount of labeled data is always a bottleneck for applyingmachine learning. Additionally, the performance of machine learning approacheshighly depends on task-specific feature engineering. The proposed paradigmcould alleviate those problems by leveraging rule-based NLP algorithms toautomatically assign weak labels and eliminating the need of task-specificfeature engineering using word embedding feature representation.
-{{< /details >}}
-
-[**Facial Attributes: Accuracy and Adversarial Robustness**](http://arxiv.org/abs/1801.02480v2)
-
-*Andras Rozsa, Manuel Günther, Ethan M. Rudd, Terrance E. Boult*
-
-{{< details "abstract" >}} abstract: Facial attributes, emerging soft biometrics, must be automatically andreliably extracted from images in order to be usable in stand-alone systems.While recent methods extract facial attributes using deep neural networks(DNNs) trained on labeled facial attribute data, the robustness of deepattribute representations has not been evaluated. In this paper, we examine therepresentational stability of several approaches that recently advanced thestate of the art on the CelebA benchmark by generating adversarial examplesformed by adding small, non-random perturbations to inputs yielding alteredclassifications. We show that our fast flipping attribute (FFA) techniquegenerates more adversarial examples than traditional algorithms, and that theadversarial robustness of DNNs varies highly between facial attributes. We alsotest the correlation of facial attributes and find that only for relatedattributes do the formed adversarial perturbations change the classification ofothers. Finally, we introduce the concept of natural adversarial samples, i.e.,misclassified images where predictions can be corrected via smallperturbations. We demonstrate that natural adversarial samples commonly occurand show that many of these images remain misclassified even with additionaltraining epochs, even though their correct classification may require only asmall adjustment to network parameters.
 {{< /details >}}
 
 >**_2018-03-29_**
@@ -3926,15 +3716,6 @@ title: "Arxiv Paper"
 {{< details "abstract" >}} abstract: Issues regarding explainable AI involve four components: users, laws &regulations, explanations and algorithms. Together these components provide acontext in which explanation methods can be evaluated regarding their adequacy.The goal of this chapter is to bridge the gap between expert users and layusers. Different kinds of users are identified and their concerns revealed,relevant statements from the General Data Protection Regulation are analyzed inthe context of Deep Neural Networks (DNNs), a taxonomy for the classificationof existing explanation methods is introduced, and finally, the various classesof explanation methods are analyzed to verify if user concerns are justified.Overall, it is clear that (visual) explanations can be given about variousaspects of the influence of the input on the output. However, it is noted thatexplanation methods or interfaces for lay users are missing and we speculatewhich criteria these methods / interfaces should satisfy. Finally it is notedthat two important concerns are difficult to address with explanation methods:the concern about bias in datasets that leads to biased DNNs, as well as thesuspicion about unfair outcomes.
 {{< /details >}}
 
->**_2018-03-20_**
-
-[**Resolution and Relevance Trade-offs in Deep Learning**](http://arxiv.org/abs/1710.11324v2)
-
-*Juyong Song, Matteo Marsili, Junghyo Jo*
-
-{{< details "abstract" >}} abstract: Deep learning has been successfully applied to various tasks, but itsunderlying mechanism remains unclear. Neural networks associate similar inputsin the visible layer to the same state of hidden variables in deep layers. Thefraction of inputs that are associated to the same state is a natural measureof similarity and is simply related to the cost in bits required to representthese inputs. The degeneracy of states with the same information cost providesinstead a natural measure of noise and is simply related the entropy of thefrequency of states, that we call relevance. Representations with minimalnoise, at a given level of similarity (resolution), are those that maximise therelevance. A signature of such efficient representations is that frequencydistributions follow power laws. We show, in extensive numerical experiments,that deep neural networks extract a hierarchy of efficient representations fromdata, because they i) achieve low levels of noise (i.e. high relevance) and ii)exhibit power law distributions. We also find that the layer that is mostefficient to reliably generate patterns of training data is the one for whichrelevance and resolution are traded at the same price, which implies thatfrequency distribution follows Zipf's law.
-{{< /details >}}
-
 >**_2018-03-17_**
 
 [**Experiments with Neural Networks for Small and Large Scale Authorship Verification**](http://arxiv.org/abs/1803.06456v1)
@@ -3942,33 +3723,6 @@ title: "Arxiv Paper"
 *Marjan Hosseinia, Arjun Mukherjee*
 
 {{< details "abstract" >}} abstract: We propose two models for a special case of authorship verification problem.The task is to investigate whether the two documents of a given pair arewritten by the same author. We consider the authorship verification problem forboth small and large scale datasets. The underlying small-scale problem has twomain challenges: First, the authors of the documents are unknown to us becauseno previous writing samples are available. Second, the two documents are short(a few hundred to a few thousand words) and may differ considerably in thegenre and/or topic. To solve it we propose transformation encoder to transformone document of the pair into the other. This document transformation generatesa loss which is used as a recognizable feature to verify if the authors of thepair are identical. For the large scale problem where various authors areengaged and more examples are available with larger length, a parallelrecurrent neural network is proposed. It compares the language models of thetwo documents. We evaluate our methods on various types of datasets includingAuthorship Identification datasets of PAN competition, Amazon reviews, andmachine learning articles. Experiments show that both methods achieve stableand competitive performance compared to the baselines.
-{{< /details >}}
-
->**_2018-02-22_**
-
-[**A Spatial Mapping Algorithm with Applications in Deep Learning-Based Structure Classification**](http://arxiv.org/abs/1802.02532v2)
-
-*Thomas Corcoran, Rafael Zamora-Resendiz, Xinlian Liu, Silvia Crivelli*
-
-{{< details "abstract" >}} abstract: Convolutional Neural Network (CNN)-based machine learning systems have madebreakthroughs in feature extraction and image recognition tasks in twodimensions (2D). Although there is significant ongoing work to apply CNNtechnology to domains involving complex 3D data, the success of such effortshas been constrained, in part, by limitations in data representationtechniques. Most current approaches rely upon low-resolution 3D models,strategic limitation of scope in the 3D space, or the application of lossyprojection techniques to allow for the use of 2D CNNs. To address this issue,we present a mapping algorithm that converts 3D structures to 2D and 1D datagrids by mapping a traversal of a 3D space-filling curve to the traversal ofcorresponding 2D and 1D curves. We explore the performance of 2D and 1D CNNstrained on data encoded with our method versus comparable volumetric CNNsoperating upon raw 3D data from a popular benchmarking dataset. Our experimentsdemonstrate that both 2D and 1D representations of 3D data generated via ourmethod preserve a significant proportion of the 3D data's features in formslearnable by CNNs. Furthermore, we demonstrate that our method of encoding 3Ddata into lower-dimensional representations allows for decreased CNN trainingtime cost, increased original 3D model rendering resolutions, and supportsincreased numbers of data channels when compared to purely volumetricapproaches. This demonstration is accomplished in the context of a structuralbiology classification task wherein we train 3D, 2D, and 1D CNNs on examples oftwo homologous branches within the Ras protein family. The essentialcontribution of this paper is the introduction of a dimensionality-reductionmethod that may ease the application of powerful deep learning tools to domainscharacterized by complex structural data.
-{{< /details >}}
-
->**_2018-02-06_**
-
-[**Digital Watermarking for Deep Neural Networks**](http://arxiv.org/abs/1802.02601v1)
-
-*Yuki Nagai, Yusuke Uchida, Shigeyuki Sakazawa, Shin'ichi Satoh*
-
-{{< details "abstract" >}} abstract: Although deep neural networks have made tremendous progress in the area ofmultimedia representation, training neural models requires a large amount ofdata and time. It is well-known that utilizing trained models as initialweights often achieves lower training error than neural networks that are notpre-trained. A fine-tuning step helps to reduce both the computational cost andimprove performance. Therefore, sharing trained models has been very importantfor the rapid progress of research and development. In addition, trained modelscould be important assets for the owner(s) who trained them, hence we regardtrained models as intellectual property. In this paper, we propose a digitalwatermarking technology for ownership authorization of deep neural networks.First, we formulate a new problem: embedding watermarks into deep neuralnetworks. We also define requirements, embedding situations, and attack typeson watermarking in deep neural networks. Second, we propose a general frameworkfor embedding a watermark in model parameters, using a parameter regularizer.Our approach does not impair the performance of networks into which a watermarkis placed because the watermark is embedded while training the host network.Finally, we perform comprehensive experiments to reveal the potential ofwatermarking deep neural networks as the basis of this new research effort. Weshow that our framework can embed a watermark during the training of a deepneural network from scratch, and during fine-tuning and distilling, withoutimpairing its performance. The embedded watermark does not disappear even afterfine-tuning or parameter pruning; the watermark remains complete even after 65%of parameters are pruned.
-{{< /details >}}
-
->**_2018-02-01_**
-
-[**Automatic Pavement Crack Detection Based on Structured Prediction with the Convolutional Neural Network**](http://arxiv.org/abs/1802.02208v1)
-
-*Zhun Fan, Yuming Wu, Jiewei Lu, Wenji Li*
-
-{{< details "abstract" >}} abstract: Automated pavement crack detection is a challenging task that has beenresearched for decades due to the complicated pavement conditions in realworld. In this paper, a supervised method based on deep learning is proposed,which has the capability of dealing with different pavement conditions.Specifically, a convolutional neural network (CNN) is used to learn thestructure of the cracks from raw images, without any preprocessing. Smallpatches are extracted from crack images as inputs to generate a large trainingdatabase, a CNN is trained and crack detection is modeled as a multi-labelclassification problem. Typically, crack pixels are much fewer than non-crackpixels. To deal with the problem with severely imbalanced data, a strategy withmodifying the ratio of positive to negative samples is proposed. The method istested on two public databases and compared with five existing methods.Experimental results show that it outperforms the other methods.
 {{< /details >}}
 
 >**_2017-04-20_**
