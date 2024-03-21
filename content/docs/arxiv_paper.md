@@ -3338,69 +3338,6 @@ title: "Arxiv Paper"
 {{< details "abstract" >}} abstract: Neuromorphic data, recording frameless spike events, have attractedconsiderable attention for the spatiotemporal information components and theevent-driven processing fashion. Spiking neural networks (SNNs) represent afamily of event-driven models with spatiotemporal dynamics for neuromorphiccomputing, which are widely benchmarked on neuromorphic data. Interestingly,researchers in the machine learning community can argue that recurrent(artificial) neural networks (RNNs) also have the capability to extractspatiotemporal features although they are not event-driven. Thus, the questionof "what will happen if we benchmark these two kinds of models together onneuromorphic data" comes out but remains unclear. In this work, we make asystematic study to compare SNNs and RNNs on neuromorphic data, taking thevision datasets as a case study. First, we identify the similarities anddifferences between SNNs and RNNs (including the vanilla RNNs and LSTM) fromthe modeling and learning perspectives. To improve comparability and fairness,we unify the supervised learning algorithm based on backpropagation throughtime (BPTT), the loss function exploiting the outputs at all timesteps, thenetwork structure with stacked fully-connected or convolutional layers, and thehyper-parameters during training. Especially, given the mainstream lossfunction used in RNNs, we modify it inspired by the rate coding scheme toapproach that of SNNs. Furthermore, we tune the temporal resolution of datasetsto test model robustness and generalization. At last, a series of contrastexperiments are conducted on two types of neuromorphic datasets: DVS-converted(N-MNIST) and DVS-captured (DVS Gesture).
 {{< /details >}}
 
->**_2020-04-29_**
-
-[**Domain Adaptive Transfer Attack (DATA)-based Segmentation Networks for Building Extraction from Aerial Images**](http://arxiv.org/abs/2004.11819v2)
-
-*Younghwan Na, Jun Hee Kim, Kyungsu Lee, Juhum Park, Jae Youn Hwang, Jihwan P. Choi*
-
-{{< details "abstract" >}} abstract: Semantic segmentation models based on convolutional neural networks (CNNs)have gained much attention in relation to remote sensing and have achievedremarkable performance for the extraction of buildings from high-resolutionaerial images. However, the issue of limited generalization for unseen imagesremains. When there is a domain gap between the training and test datasets,CNN-based segmentation models trained by a training dataset fail to segmentbuildings for the test dataset. In this paper, we propose segmentation networksbased on a domain adaptive transfer attack (DATA) scheme for buildingextraction from aerial images. The proposed system combines the domain transferand adversarial attack concepts. Based on the DATA scheme, the distribution ofthe input images can be shifted to that of the target images while turningimages into adversarial examples against a target network. Defendingadversarial examples adapted to the target domain can overcome the performancedegradation due to the domain gap and increase the robustness of thesegmentation model. Cross-dataset experiments and the ablation study areconducted for the three different datasets: the Inria aerial image labelingdataset, the Massachusetts building dataset, and the WHU East Asia dataset.Compared to the performance of the segmentation network without the DATAscheme, the proposed method shows improvements in the overall IoU. Moreover, itis verified that the proposed method outperforms even when compared to featureadaptation (FA) and output space adaptation (OSA).
-{{< /details >}}
-
->**_2020-04-26_**
-
-[**DeepSeg: Deep Neural Network Framework for Automatic Brain Tumor Segmentation using Magnetic Resonance FLAIR Images**](http://arxiv.org/abs/2004.12333v1)
-
-*Ramy A. Zeineldin, Mohamed E. Karar, Jan Coburger, Christian R. Wirtz, Oliver Burgert*
-
-{{< details "abstract" >}} abstract: Purpose: Gliomas are the most common and aggressive type of brain tumors dueto their infiltrative nature and rapid progression. The process ofdistinguishing tumor boundaries from healthy cells is still a challenging taskin the clinical routine. Fluid-Attenuated Inversion Recovery (FLAIR) MRImodality can provide the physician with information about tumor infiltration.Therefore, this paper proposes a new generic deep learning architecture; namelyDeepSeg for fully automated detection and segmentation of the brain lesionusing FLAIR MRI data.  Methods: The developed DeepSeg is a modular decoupling framework. It consistsof two connected core parts based on an encoding and decoding relationship. Theencoder part is a convolutional neural network (CNN) responsible for spatialinformation extraction. The resulting semantic map is inserted into the decoderpart to get the full resolution probability map. Based on modified U-Netarchitecture, different CNN models such as Residual Neural Network (ResNet),Dense Convolutional Network (DenseNet), and NASNet have been utilized in thisstudy.  Results: The proposed deep learning architectures have been successfullytested and evaluated on-line based on MRI datasets of Brain Tumor Segmentation(BraTS 2019) challenge, including s336 cases as training data and 125 cases forvalidation data. The dice and Hausdorff distance scores of obtainedsegmentation results are about 0.81 to 0.84 and 9.8 to 19.7 correspondingly.  Conclusion: This study showed successful feasibility and comparativeperformance of applying different deep learning models in a new DeepSegframework for automated brain tumor segmentation in FLAIR MR images. Theproposed DeepSeg is open-source and freely available athttps://github.com/razeineldin/DeepSeg/.
-{{< /details >}}
-
->**_2020-04-15_**
-
-[**Learning Furniture Compatibility with Graph Neural Networks**](http://arxiv.org/abs/2004.07268v1)
-
-*Luisa F. Polania, Mauricio Flores, Yiran Li, Matthew Nokleby*
-
-{{< details "abstract" >}} abstract: We propose a graph neural network (GNN) approach to the problem of predictingthe stylistic compatibility of a set of furniture items from images. While mostexisting results are based on siamese networks which evaluate pairwisecompatibility between items, the proposed GNN architecture exploits relationalinformation among groups of items. We present two GNN models, both of whichcomprise a deep CNN that extracts a feature representation for each image, agated recurrent unit (GRU) network that models interactions between thefurniture items in a set, and an aggregation function that calculates thecompatibility score. In the first model, a generalized contrastive lossfunction that promotes the generation of clustered embeddings for itemsbelonging to the same furniture set is introduced. Also, in the first model,the edge function between nodes in the GRU and the aggregation function arefixed in order to limit model complexity and allow training on smallerdatasets; in the second model, the edge function and aggregation function arelearned directly from the data. We demonstrate state-of-the art accuracy forcompatibility prediction and "fill in the blank" tasks on the Bonn andSingapore furniture datasets. We further introduce a new dataset, called theTarget Furniture Collections dataset, which contains over 6000 furniture itemsthat have been hand-curated by stylists to make up 1632 compatible sets. Wealso demonstrate superior prediction accuracy on this dataset.
-{{< /details >}}
-
->**_2020-04-10_**
-
-[**Artificial Intelligence in Glioma Imaging: Challenges and Advances**](http://arxiv.org/abs/1911.12886v3)
-
-*Weina Jin, Mostafa Fatehi, Kumar Abhishek, Mayur Mallya, Brian Toyota, Ghassan Hamarneh*
-
-{{< details "abstract" >}} abstract: Primary brain tumors including gliomas continue to pose significantmanagement challenges to clinicians. While the presentation, the pathology, andthe clinical course of these lesions are variable, the initial investigationsare usually similar. Patients who are suspected to have a brain tumor will beassessed with computed tomography (CT) and magnetic resonance imaging (MRI).The imaging findings are used by neurosurgeons to determine the feasibility ofsurgical resection and plan such an undertaking. Imaging studies are also anindispensable tool in tracking tumor progression or its response to treatment.As these imaging studies are non-invasive, relatively cheap and accessible topatients, there have been many efforts over the past two decades to increasethe amount of clinically-relevant information that can be extracted from brainimaging. Most recently, artificial intelligence (AI) techniques have beenemployed to segment and characterize brain tumors, as well as to detectprogression or treatment-response. However, the clinical utility of suchendeavours remains limited due to challenges in data collection and annotation,model training, and the reliability of AI-generated information.  We provide a review of recent advances in addressing the above challenges.First, to overcome the challenge of data paucity, different image imputationand synthesis techniques along with annotation collection efforts aresummarized. Next, various training strategies are presented to meet multipledesiderata, such as model performance, generalization ability, data privacyprotection, and learning with sparse annotations. Finally, standardizedperformance evaluation and model interpretability methods have been reviewed.We believe that these technical approaches will facilitate the development of afully-functional AI tool in the clinical care of patients with gliomas.
-{{< /details >}}
-
->**_2020-04-04_**
-
-[**Scaling Limits of Wide Neural Networks with Weight Sharing: Gaussian Process Behavior, Gradient Independence, and Neural Tangent Kernel Derivation**](http://arxiv.org/abs/1902.04760v3)
-
-*Greg Yang*
-
-{{< details "abstract" >}} abstract: Several recent trends in machine learning theory and practice, from thedesign of state-of-the-art Gaussian Process to the convergence analysis of deepneural nets (DNNs) under stochastic gradient descent (SGD), have found itfruitful to study wide random neural networks. Central to these approaches arecertain scaling limits of such networks. We unify these results by introducinga notion of a straightline \emph{tensor program} that can express most neuralnetwork computations, and we characterize its scaling limit when its tensorsare large and randomized. From our framework follows (1) the convergence ofrandom neural networks to Gaussian processes for architectures such asrecurrent neural networks, convolutional neural networks, residual networks,attention, and any combination thereof, with or without batch normalization;(2) conditions under which the \emph{gradient independence assumption} -- thatweights in backpropagation can be assumed to be independent from weights in theforward pass -- leads to correct computation of gradient dynamics, andcorrections when it does not; (3) the convergence of the Neural Tangent Kernel,a recently proposed kernel used to predict training dynamics of neural networksunder gradient descent, at initialization for all architectures in (1) withoutbatch normalization. Mathematically, our framework is general enough torederive classical random matrix results such as the semicircle and theMarchenko-Pastur laws, as well as recent results in neural network Jacobiansingular values. We hope our work opens a way toward design of even strongerGaussian Processes, initialization schemes to avoid gradientexplosion/vanishing, and deeper understanding of SGD dynamics in modernarchitectures.
-{{< /details >}}
-
->**_2020-04-03_**
-
-[**Binary Classification of Alzheimer Disease using sMRI Imaging modality and Deep Learning**](http://arxiv.org/abs/1809.06209v3)
-
-*Ahsan Bin Tufail, Qiu-Na Zhang, Yong-Kui Ma*
-
-{{< details "abstract" >}} abstract: Alzheimer's disease (AD) is an irreversible devastative neurodegenerativedisorder associated with progressive impairment of memory and cognitivefunctions. Its early diagnosis is crucial for the development of possiblefuture treatment option(s). Structural magnetic resonance images (sMRI) playsan important role to help in understanding the anatomical changes related to ADespecially in its early stages. Conventional methods require the expertise ofdomain experts and extract hand-picked features such as gray mattersubstructures and train a classifier to distinguish AD subjects from healthysubjects. Different from these methods, this paper proposes to constructmultiple deep 2D convolutional neural networks (2D-CNNs) to learn the variousfeatures from local brain images which are combined to make the finalclassification for AD diagnosis. The whole brain image was passed through twotransfer learning architectures; Inception version 3 and Xception; as well ascustom Convolutional Neural Network (CNN) built with the help of separableconvolutional layers which can automatically learn the generic features fromimaging data for classification. Our study is conducted using cross-sectionalT1-weighted structural MRI brain images from Open Access Series of ImagingStudies (OASIS) database to maintain the size and contrast over different MRIscans. Experimental results show that the transfer learning approaches exceedthe performance of non-transfer learning based approaches demonstrating theeffectiveness of these approaches for the binary AD classification task.
-{{< /details >}}
-
->**_2020-03-12_**
-
-[**Interpretable CNNs for Object Classification**](http://arxiv.org/abs/1901.02413v2)
-
-*Quanshi Zhang, Xin Wang, Ying Nian Wu, Huilin Zhou, Song-Chun Zhu*
-
-{{< details "abstract" >}} abstract: This paper proposes a generic method to learn interpretable convolutionalfilters in a deep convolutional neural network (CNN) for object classification,where each interpretable filter encodes features of a specific object part. Ourmethod does not require additional annotations of object parts or textures forsupervision. Instead, we use the same training data as traditional CNNs. Ourmethod automatically assigns each interpretable filter in a high conv-layerwith an object part of a certain category during the learning process. Suchexplicit knowledge representations in conv-layers of CNN help people clarifythe logic encoded in the CNN, i.e., answering what patterns the CNN extractsfrom an input image and uses for prediction. We have tested our method usingdifferent benchmark CNNs with various structures to demonstrate the broadapplicability of our method. Experiments have shown that our interpretablefilters are much more semantically meaningful than traditional filters.
-{{< /details >}}
-
 >**_2020-02-28_**
 
 [**Constrained Generative Adversarial Network Ensembles for Sharable Synthetic Data Generation**](http://arxiv.org/abs/2003.00086v1)
@@ -3419,87 +3356,6 @@ title: "Arxiv Paper"
 {{< details "abstract" >}} abstract: Deep learning has achieved tremendous success in numerous industrialapplications. As training a good model often needs massive high-quality dataand computation resources, the learned models often have significant businessvalues. However, these valuable deep models are exposed to a huge risk ofinfringements. For example, if the attacker has the full information of onetarget model including the network structure and weights, the model can beeasily finetuned on new datasets. Even if the attacker can only access theoutput of the target model, he/she can still train another similar surrogatemodel by generating a large scale of input-output training pairs. How toprotect the intellectual property of deep models is a very important butseriously under-researched problem. There are a few recent attempts atclassification network protection only. In this paper, we propose the firstmodel watermarking framework for protecting image processing models. To achievethis goal, we leverage the spatial invisible watermarking mechanism.Specifically, given a black-box target model, a unified and invisible watermarkis hidden into its outputs, which can be regarded as a special task-agnosticbarrier. In this way, when the attacker trains one surrogate model by using theinput-output pairs of the target model, the hidden watermark will be learnedand extracted afterward. To enable watermarks from binary bits tohigh-resolution images, both traditional and deep spatial invisiblewatermarking mechanism are considered. Experiments demonstrate the robustnessof the proposed watermarking mechanism, which can resist surrogate modelslearned with different network structures and objective functions. Besides deepmodels, the proposed method is also easy to be extended to protect data andtraditional image processing algorithms.
 {{< /details >}}
 
->**_2020-02-24_**
-
-[**Deep Multi-Facial patches Aggregation Network for Expression Classification from Face Images**](http://arxiv.org/abs/1909.10305v2)
-
-*Amine Djerghri, Ahmed Rachid Hazourli, Alice Othmani*
-
-{{< details "abstract" >}} abstract: Emotional Intelligence in Human-Computer Interaction has attracted increasingattention from researchers in multidisciplinary research fields includingpsychology, computer vision, neuroscience, artificial intelligence, and relateddisciplines. Human prone to naturally interact with computers face-to-face.Human Expressions is an important key to better link human and computers. Thus,designing interfaces able to understand human expressions and emotions canimprove Human-Computer Interaction (HCI) for better communication. In thispaper, we investigate HCI via a deep multi-facial patches aggregation networkfor Face Expression Recognition (FER). Deep features are extracted from facialparts and aggregated for expression classification. Several problems may affectthe performance of the proposed framework like the small size of FER datasetsand the high number of parameters to learn. For That, two data augmentationtechniques are proposed for facial expression generation to expand the labeledtraining. The proposed framework is evaluated on the extended Cohn-Konadedataset (CK+) and promising results are achieved.
-{{< /details >}}
-
->**_2020-02-19_**
-
-[**Deep compositional robotic planners that follow natural language commands**](http://arxiv.org/abs/2002.05201v2)
-
-*Yen-Ling Kuo, Boris Katz, Andrei Barbu*
-
-{{< details "abstract" >}} abstract: We demonstrate how a sampling-based robotic planner can be augmented to learnto understand a sequence of natural language commands in a continuousconfiguration space to move and manipulate objects. Our approach combines adeep network structured according to the parse of a complex command thatincludes objects, verbs, spatial relations, and attributes, with asampling-based planner, RRT. A recurrent hierarchical deep network controls howthe planner explores the environment, determines when a planned path is likelyto achieve a goal, and estimates the confidence of each move to trade offexploitation and exploration between the network and the planner. Planners aredesigned to have near-optimal behavior when information about the task ismissing, while networks learn to exploit observations which are available fromthe environment, making the two naturally complementary. Combining the twoenables generalization to new maps, new kinds of obstacles, and more complexsentences that do not occur in the training set. Little data is required totrain the model despite it jointly acquiring a CNN that extracts features fromthe environment as it learns the meanings of words. The model provides a levelof interpretability through the use of attention maps allowing users to see itsreasoning steps despite being an end-to-end model. This end-to-end model allowsrobots to learn to follow natural language commands in challenging continuousenvironments.
-{{< /details >}}
-
->**_2020-02-15_**
-
-[**Embedding Hard Physical Constraints in Neural Network Coarse-Graining of 3D Turbulence**](http://arxiv.org/abs/2002.00021v2)
-
-*Arvind T. Mohan, Nicholas Lubbers, Daniel Livescu, Michael Chertkov*
-
-{{< details "abstract" >}} abstract: In the recent years, deep learning approaches have shown much promise inmodeling complex systems in the physical sciences. A major challenge in deeplearning of PDEs is enforcing physical constraints and boundary conditions. Inthis work, we propose a general framework to directly embed the notion of anincompressible fluid into Convolutional Neural Networks, and apply this tocoarse-graining of turbulent flow. These physics-embedded neural networksleverage interpretable strategies from numerical methods and computationalfluid dynamics to enforce physical laws and boundary conditions by takingadvantage the mathematical properties of the underlying equations. Wedemonstrate results on three-dimensional fully-developed turbulence, showingthat this technique drastically improves local conservation of mass, withoutsacrificing performance according to several other metrics characterizing thefluid flow.
-{{< /details >}}
-
->**_2020-02-14_**
-
-[**Learning from Explanations with Neural Execution Tree**](http://arxiv.org/abs/1911.01352v3)
-
-*Ziqi Wang, Yujia Qin, Wenxuan Zhou, Jun Yan, Qinyuan Ye, Leonardo Neves, Zhiyuan Liu, Xiang Ren*
-
-{{< details "abstract" >}} abstract: While deep neural networks have achieved impressive performance on a range ofNLP tasks, these data-hungry models heavily rely on labeled data, whichrestricts their applications in scenarios where data annotation is expensive.Natural language (NL) explanations have been demonstrated very usefuladditional supervision, which can provide sufficient domain knowledge forgenerating more labeled data over new instances, while the annotation time onlydoubles. However, directly applying them for augmenting model learningencounters two challenges: (1) NL explanations are unstructured and inherentlycompositional, which asks for a modularized model to represent their semantics,(2) NL explanations often have large numbers of linguistic variants, resultingin low recall and limited generalization ability. In this paper, we propose anovel Neural Execution Tree (NExT) framework to augment training data for textclassification using NL explanations. After transforming NL explanations intoexecutable logical forms by semantic parsing, NExT generalizes different typesof actions specified by the logical forms for labeling data instances, whichsubstantially increases the coverage of each NL explanation. Experiments on twoNLP tasks (relation extraction and sentiment analysis) demonstrate itssuperiority over baseline methods. Its extension to multi-hop questionanswering achieves performance gain with light annotation effort.
-{{< /details >}}
-
->**_2020-02-07_**
-
-[**Object-Adaptive LSTM Network for Real-time Visual Tracking with Adversarial Data Augmentation**](http://arxiv.org/abs/2002.02598v1)
-
-*Yihan Du, Yan Yan, Si Chen, Yang Hua*
-
-{{< details "abstract" >}} abstract: In recent years, deep learning based visual tracking methods have obtainedgreat success owing to the powerful feature representation ability ofConvolutional Neural Networks (CNNs). Among these methods, classification-basedtracking methods exhibit excellent performance while their speeds are heavilylimited by the expensive computation for massive proposal feature extraction.In contrast, matching-based tracking methods (such as Siamese networks) possessremarkable speed superiority. However, the absence of online updating rendersthese methods unadaptable to significant object appearance variations. In thispaper, we propose a novel real-time visual tracking method, which adopts anobject-adaptive LSTM network to effectively capture the video sequentialdependencies and adaptively learn the object appearance variations. For highcomputational efficiency, we also present a fast proposal selection strategy,which utilizes the matching-based tracking method to pre-estimate denseproposals and selects high-quality ones to feed to the LSTM network forclassification. This strategy efficiently filters out some irrelevant proposalsand avoids the redundant computation for feature extraction, which enables ourmethod to operate faster than conventional classification-based trackingmethods. In addition, to handle the problems of sample inadequacy and classimbalance during online tracking, we adopt a data augmentation technique basedon the Generative Adversarial Network (GAN) to facilitate the training of theLSTM network. Extensive experiments on four visual tracking benchmarksdemonstrate the state-of-the-art performance of our method in terms of bothtracking accuracy and speed, which exhibits great potentials of recurrentstructures for visual tracking.
-{{< /details >}}
-
->**_2020-01-30_**
-
-[**An automatic deep learning-based workflow for glioblastoma survival prediction using pre-operative multimodal MR images**](http://arxiv.org/abs/2001.11155v1)
-
-*Jie Fu, Kamal Singhrao, Xinran Zhong, Yu Gao, Sharon Qi, Yingli Yang, Dan Ruan, John H Lewis*
-
-{{< details "abstract" >}} abstract: We proposed a fully automatic workflow for glioblastoma (GBM) survivalprediction using deep learning (DL) methods. 285 glioma (210 GBM, 75 low-gradeglioma) patients were included. 163 of the GBM patients had overall survival(OS) data. Every patient had four pre-operative MR scans and manually drawntumor contours. For automatic tumor segmentation, a 3D convolutional neuralnetwork (CNN) was trained and validated using 122 glioma patients. The trainedmodel was applied to the remaining 163 GBM patients to generate tumor contours.The handcrafted and DL-based radiomic features were extracted fromauto-contours using explicitly designed algorithms and a pre-trained CNNrespectively. 163 GBM patients were randomly split into training (n=122) andtesting (n=41) sets for survival analysis. Cox regression models withregularization techniques were trained to construct the handcrafted andDL-based signatures. The prognostic power of the two signatures was evaluatedand compared. The 3D CNN achieved an average Dice coefficient of 0.85 across163 GBM patients for tumor segmentation. The handcrafted signature achieved aC-index of 0.64 (95% CI: 0.55-0.73), while the DL-based signature achieved aC-index of 0.67 (95% CI: 0.57-0.77). Unlike the handcrafted signature, theDL-based signature successfully stratified testing patients into twoprognostically distinct groups (p-value<0.01, HR=2.80, 95% CI: 1.26-6.24). Theproposed 3D CNN generated accurate GBM tumor contours from four MR images. TheDL-based signature resulted in better GBM survival prediction, in terms ofhigher C-index and significant patient stratification, than the handcraftedsignature. The proposed automatic radiomic workflow demonstrated the potentialof improving patient stratification and survival prediction in GBM patients.
-{{< /details >}}
-
->**_2020-01-28_**
-
-[**Algorithms of Data Development For Deep Learning and Feedback Design**](http://arxiv.org/abs/1912.00492v2)
-
-*Wei Kang, Qi Gong, Tenavi Nakamura-Zimmerer*
-
-{{< details "abstract" >}} abstract: Recent research reveals that deep learning is an effective way of solvinghigh dimensional Hamilton-Jacobi-Bellman equations. The resulting feedbackcontrol law in the form of a neural network is computationally efficient forreal-time applications of optimal control. A critical part of this designmethod is to generate data for training the neural network and validating itsaccuracy. In this paper, we provide a survey of existing algorithms that can beused to generate data. All the algorithms surveyed in this paper arecausality-free, i.e., the solution at a point is computed without using thevalue of the function at any other points. At the end of the paper, anillustrative example of optimal feedback design using deep learning is given.
-{{< /details >}}
-
->**_2020-01-26_**
-
-[**Analyzing the Noise Robustness of Deep Neural Networks**](http://arxiv.org/abs/2001.09395v1)
-
-*Kelei Cao, Mengchen Liu, Hang Su, Jing Wu, Jun Zhu, Shixia Liu*
-
-{{< details "abstract" >}} abstract: Adversarial examples, generated by adding small but intentionallyimperceptible perturbations to normal examples, can mislead deep neuralnetworks (DNNs) to make incorrect predictions. Although much work has been doneon both adversarial attack and defense, a fine-grained understanding ofadversarial examples is still lacking. To address this issue, we present avisual analysis method to explain why adversarial examples are misclassified.The key is to compare and analyze the datapaths of both the adversarial andnormal examples. A datapath is a group of critical neurons along with theirconnections. We formulate the datapath extraction as a subset selection problemand solve it by constructing and training a neural network. A multi-levelvisualization consisting of a network-level visualization of data flows, alayer-level visualization of feature maps, and a neuron-level visualization oflearned features, has been designed to help investigate how datapaths ofadversarial and normal examples diverge and merge in the prediction process. Aquantitative evaluation and a case study were conducted to demonstrate thepromise of our method to explain the misclassification of adversarial examples.
-{{< /details >}}
-
->**_2019-12-17_**
-
-[**Facial Synthesis from Visual Attributes via Sketch using Multi-Scale Generators**](http://arxiv.org/abs/1912.10479v1)
-
-*Xing Di, Vishal M. Patel*
-
-{{< details "abstract" >}} abstract: Automatic synthesis of faces from visual attributes is an important problemin computer vision and has wide applications in law enforcement andentertainment. With the advent of deep generative convolutional neural networks(CNNs), attempts have been made to synthesize face images from attributes andtext descriptions. In this paper, we take a different approach, where weformulate the original problem as a stage-wise learning problem. We firstsynthesize the facial sketch corresponding to the visual attributes and then wegenerate the face image based on the synthesized sketch. The proposedframework, is based on a combination of two different Generative AdversarialNetworks (GANs) - (1) a sketch generator network which synthesizes realisticsketch from the input attributes, and (2) a face generator network whichsynthesizes facial images from the synthesized sketch images with the help offacial attributes. Extensive experiments and comparison with recent methods areperformed to verify the effectiveness of the proposed attribute-based two-stageface synthesis method.
-{{< /details >}}
-
 >**_2019-12-09_**
 
 [**Stealing Knowledge from Protected Deep Neural Networks Using Composite Unlabeled Data**](http://arxiv.org/abs/1912.03959v1)
@@ -3507,51 +3363,6 @@ title: "Arxiv Paper"
 *Itay Mosafi, Eli David, Nathan S. Netanyahu*
 
 {{< details "abstract" >}} abstract: As state-of-the-art deep neural networks are deployed at the core of moreadvanced Al-based products and services, the incentive for copying them (i.e.,their intellectual properties) by rival adversaries is expected to increaseconsiderably over time. The best way to extract or steal knowledge from suchnetworks is by querying them using a large dataset of random samples andrecording their output, followed by training a student network to mimic theseoutputs, without making any assumption about the original networks. The mosteffective way to protect against such a mimicking attack is to provide only theclassification result, without confidence values associated with the softmaxlayer.In this paper, we present a novel method for generating composite imagesfor attacking a mentor neural network using a student model. Our method assumesno information regarding the mentor's training dataset, architecture, orweights. Further assuming no information regarding the mentor's softmax outputvalues, our method successfully mimics the given neural network and steals allof its knowledge. We also demonstrate that our student network (which copiesthe mentor) is impervious to watermarking protection methods, and thus wouldnot be detected as a stolen model.Our results imply, essentially, that allcurrent neural networks are vulnerable to mimicking attacks, even if they donot divulge anything but the most basic required output, and that the studentmodel which mimics them cannot be easily detected and singled out as a stolencopy using currently available techniques.
-{{< /details >}}
-
->**_2019-12-04_**
-
-[**Decoding and mapping task states of the human brain via deep learning**](http://arxiv.org/abs/1801.09858v3)
-
-*Xiaoxiao Wang, Xiao Liang, Zhoufan Jiang, Benedictor Alexander Nguchu, Yawen Zhou, Yanming Wang, Huijuan Wang, Yu Li, Yuying Zhu, Feng Wu, Jia-Hong Gao, Benching Qiu*
-
-{{< details "abstract" >}} abstract: Support vector machine (SVM) based multivariate pattern analysis (MVPA) hasdelivered promising performance in decoding specific task states based onfunctional magnetic resonance imaging (fMRI) of the human brain.Conventionally, the SVM-MVPA requires careful feature selection/extractionaccording to expert knowledge. In this study, we propose a deep neural network(DNN) for directly decoding multiple brain task states from fMRI signals of thebrain without any burden for feature handcrafts. We trained and tested the DNNclassifier using task fMRI data from the Human Connectome Project's S1200dataset (N=1034). In tests to verify its performance, the proposedclassification method identified seven tasks with an average accuracy of 93.7%.We also showed the general applicability of the DNN for transfer learning tosmall datasets (N=43), a situation encountered in typical neuroscienceresearch. The proposed method achieved an average accuracy of 89.0% and 94.7%on a working memory task and a motor classification task, respectively, higherthan the accuracy of 69.2% and 68.6% obtained by the SVM-MVPA. A networkvisualization analysis showed that the DNN automatically detected features fromareas of the brain related to each task. Without incurring the burden ofhandcrafting the features, the proposed deep decoding method can classify braintask states highly accurately, and is a powerful tool for fMRI researchers.
-{{< /details >}}
-
->**_2019-11-29_**
-
-[**Domain-invariant Stereo Matching Networks**](http://arxiv.org/abs/1911.13287v1)
-
-*Feihu Zhang, Xiaojuan Qi, Ruigang Yang, Victor Prisacariu, Benjamin Wah, Philip Torr*
-
-{{< details "abstract" >}} abstract: State-of-the-art stereo matching networks have difficulties in generalizingto new unseen environments due to significant domain differences, such ascolor, illumination, contrast, and texture. In this paper, we aim at designinga domain-invariant stereo matching network (DSMNet) that generalizes well tounseen scenes. To achieve this goal, we propose i) a novel "domainnormalization" approach that regularizes the distribution of learnedrepresentations to allow them to be invariant to domain differences, and ii) atrainable non-local graph-based filter for extracting robust structural andgeometric representations that can further enhance domain-invariantgeneralizations. When trained on synthetic data and generalized to real testsets, our model performs significantly better than all state-of-the-art models.It even outperforms some deep learning models (e.g. MC-CNN) fine-tuned withtest-domain data.
-{{< /details >}}
-
->**_2019-11-25_**
-
-[**Neural Random Forest Imitation**](http://arxiv.org/abs/1911.10829v1)
-
-*Christoph Reinders, Bodo Rosenhahn*
-
-{{< details "abstract" >}} abstract: We present Neural Random Forest Imitation - a novel approach for transformingrandom forests into neural networks. Existing methods produce very inefficientarchitectures and do not scale. In this paper, we introduce a new method forgenerating data from a random forest and learning a neural network thatimitates it. Without any additional training data, this transformation createsvery efficient neural networks that learn the decision boundaries of a randomforest. The generated model is fully differentiable and can be combined withthe feature extraction in a single pipeline enabling further end-to-endprocessing. Experiments on several real-world benchmark datasets demonstrateoutstanding performance in terms of scalability, accuracy, and learning withvery few training examples. Compared to state-of-the-art mappings, wesignificantly reduce the network size while achieving the same or even improvedaccuracy due to better generalization.
-{{< /details >}}
-
->**_2019-11-23_**
-
-[**On Functional Test Generation for Deep Neural Network IPs**](http://arxiv.org/abs/1911.11550v1)
-
-*Bo Luo, Yu Li, Lingxiao Wei, Qiang Xu*
-
-{{< details "abstract" >}} abstract: Machine learning systems based on deep neural networks (DNNs) producestate-of-the-art results in many applications. Considering the large amount oftraining data and know-how required to generate the network, it is morepractical to use third-party DNN intellectual property (IP) cores for manydesigns. No doubt to say, it is essential for DNN IP vendors to provide testcases for functional validation without leaking their parameters to IP users.To satisfy this requirement, we propose to effectively generate test cases thatactivate parameters as many as possible and propagate their perturbations tooutputs. Then the functionality of DNN IPs can be validated by only checkingtheir outputs. However, it is difficult considering large numbers of parametersand highly non-linearity of DNNs. In this paper, we tackle this problem byjudiciously selecting samples from the DNN training set and applying agradient-based method to generate new test cases. Experimental resultsdemonstrate the efficacy of our proposed solution.
-{{< /details >}}
-
->**_2019-11-08_**
-
-[**Regularized Deep Networks in Intelligent Transportation Systems: A Taxonomy and a Case Study**](http://arxiv.org/abs/1911.03010v1)
-
-*Mohammad Mahdi Bejani, Mehdi Ghatee*
-
-{{< details "abstract" >}} abstract: Intelligent Transportation Systems (ITS) are much correlated with datascience mechanisms. Among the different correlation branches, this paperfocuses on the neural network learning models. Some of the considered modelsare shallow and they get some user-defined features and learn the relationship,while deep models extract the necessary features before learning by themselves.Both of these paradigms are utilized in the recent intelligent transportationsystems (ITS) to support decision-making by the aid of different operationssuch as frequent patterns mining, regression, clustering, and classification.When these learners cannot generalize the results and just memorize thetraining samples, they fail to support the necessities. In these cases, thetesting error is bigger than the training error. This phenomenon is addressedas overfitting in the literature. Because, this issue decreases the reliabilityof learning systems, in ITS applications, we cannot use such over-fittedmachine learning models for different tasks such as traffic prediction, thesignal controlling, safety applications, emergency responses, mode detection,driving evaluation, etc. Besides, deep learning models use a great number ofhyper-parameters, the overfitting in deep models is more attention. To solvethis problem, the regularized learning models can be followed. The aim of thispaper is to review the approaches presented to regularize the overfitting indifferent categories of ITS studies. Then, we give a case study on drivingsafety that uses a regularized version of the convolutional neural network(CNN).
 {{< /details >}}
 
 >**_2019-11-07_**
@@ -3563,87 +3374,6 @@ title: "Arxiv Paper"
 {{< details "abstract" >}} abstract: Deep learning techniques have made tremendous progress in a variety ofchallenging tasks, such as image recognition and machine translation, duringthe past decade. Training deep neural networks is computationally expensive andrequires both human and intellectual resources. Therefore, it is necessary toprotect the intellectual property of the model and externally verify theownership of the model. However, previous studies either fail to defend againstthe evasion attack or have not explicitly dealt with fraudulent claims ofownership by adversaries. Furthermore, they can not establish a clearassociation between the model and the creator's identity.  To fill these gaps, in this paper, we propose a novel intellectual propertyprotection (IPP) framework based on blind-watermark for watermarking deepneural networks that meet the requirements of security and feasibility. Ourframework accepts ordinary samples and the exclusive logo as inputs, outputtingnewly generated samples as watermarks, which are almost indistinguishable fromthe origin, and infuses these watermarks into DNN models by assigning specificlabels, leaving the backdoor as the basis for our copyright claim. We evaluatedour IPP framework on two benchmark datasets and 15 popular deep learningmodels. The results show that our framework successfully verifies the ownershipof all the models without a noticeable impact on their primary task. Mostimportantly, we are the first to successfully design and implement ablind-watermark based framework, which can achieve state-of-art performances onundetectability against evasion attack and unforgeability against fraudulentclaims of ownership. Further, our framework shows remarkable robustness andestablishes a clear association between the model and the author's identity.
 {{< /details >}}
 
->**_2019-11-05_**
-
-[**Hierarchical Mixtures of Generators for Adversarial Learning**](http://arxiv.org/abs/1911.02069v1)
-
-*Alper Ahmetoğlu, Ethem Alpaydın*
-
-{{< details "abstract" >}} abstract: Generative adversarial networks (GANs) are deep neural networks that allow usto sample from an arbitrary probability distribution without explicitlyestimating the distribution. There is a generator that takes a latent vector asinput and transforms it into a valid sample from the distribution. There isalso a discriminator that is trained to discriminate such fake samples fromtrue samples of the distribution; at the same time, the generator is trained togenerate fakes that the discriminator cannot tell apart from the true samples.Instead of learning a global generator, a recent approach involves trainingmultiple generators each responsible from one part of the distribution. In thiswork, we review such approaches and propose the hierarchical mixture ofgenerators, inspired from the hierarchical mixture of experts model, thatlearns a tree structure implementing a hierarchical clustering with soft splitsin the decision nodes and local generators in the leaves. Since the generatorsare combined softly, the whole model is continuous and can be trained usinggradient-based optimization, just like the original GAN model. Our experimentson five image data sets, namely, MNIST, FashionMNIST, UTZap50K, Oxford Flowers,and CelebA, show that our proposed model generates samples of high quality anddiversity in terms of popular GAN evaluation metrics. The learned hierarchicalstructure also leads to knowledge extraction.
-{{< /details >}}
-
->**_2019-10-28_**
-
-[**Evaluating the Factual Consistency of Abstractive Text Summarization**](http://arxiv.org/abs/1910.12840v1)
-
-*Wojciech Kryściński, Bryan McCann, Caiming Xiong, Richard Socher*
-
-{{< details "abstract" >}} abstract: Currently used metrics for assessing summarization algorithms do not accountfor whether summaries are factually consistent with source documents. Wepropose a weakly-supervised, model-based approach for verifying factualconsistency and identifying conflicts between source documents and a generatedsummary. Training data is generated by applying a series of rule-basedtransformations to the sentences of source documents. The factual consistencymodel is then trained jointly for three tasks: 1) identify whether sentencesremain factually consistent after transformation, 2) extract a span in thesource documents to support the consistency prediction, 3) extract a span inthe summary sentence that is inconsistent if one exists. Transferring thismodel to summaries generated by several state-of-the art models reveals thatthis highly scalable approach substantially outperforms previous models,including those trained with strong supervision using standard datasets fornatural language inference and fact checking. Additionally, human evaluationshows that the auxiliary span extraction tasks provide useful assistance in theprocess of verifying factual consistency.
-{{< /details >}}
-
->**_2019-10-20_**
-
-[**Through-Wall Pose Imaging in Real-Time with a Many-to-Many Encoder/Decoder Paradigm**](http://arxiv.org/abs/1904.00739v2)
-
-*Kevin Meng, Yu Meng*
-
-{{< details "abstract" >}} abstract: Overcoming the visual barrier and developing "see-through vision" has beenone of mankind's long-standing dreams. Unlike visible light, Radio Frequency(RF) signals penetrate opaque obstructions and reflect highly off humans. Thispaper establishes a deep-learning model that can be trained to reconstructcontinuous video of a 15-point human skeleton even through visual occlusion.The training process adopts a student/teacher learning procedure inspired bythe Feynman learning technique, in which video frames and RF data are firstcollected simultaneously using a co-located setup containing an optical cameraand an RF antenna array transceiver. Next, the video frames are processed witha computer-vision-based gait analysis "teacher" module to generate ground-truthhuman skeletons for each frame. Then, the same type of skeleton is predictedfrom corresponding RF data using a "student" deep-learning model consisting ofa Residual Convolutional Neural Network (CNN), Region Proposal Network (RPN),and Recurrent Neural Network with Long-Short Term Memory (LSTM) that 1)extracts spatial features from RF images, 2) detects all people present in ascene, and 3) aggregates information over many time-steps, respectively. Themodel is shown to both accurately and completely predict the pose of humansbehind visual obstruction solely using RF signals. Primary academiccontributions include the novel many-to-many imaging methodology, uniqueintegration of RPN and LSTM networks, and original training pipeline.
-{{< /details >}}
-
->**_2019-10-15_**
-
-[**MUTE: Data-Similarity Driven Multi-hot Target Encoding for Neural Network Design**](http://arxiv.org/abs/1910.07042v1)
-
-*Mayoore S. Jaiswal, Bumsoo Kang, Jinho Lee, Minsik Cho*
-
-{{< details "abstract" >}} abstract: Target encoding is an effective technique to deliver better performance forconventional machine learning methods, and recently, for deep neural networksas well. However, the existing target encoding approaches require significantincrease in the learning capacity, thus demand higher computation power andmore training data. In this paper, we present a novel and efficient targetencoding scheme, MUTE to improve both generalizability and robustness of atarget model by understanding the inter-class characteristics of a targetdataset. By extracting the confusion level between the target classes in adataset, MUTE strategically optimizes the Hamming distances among targetencoding. Such optimized target encoding offers higher classification strengthfor neural network models with negligible computation overhead and withoutincreasing the model size. When MUTE is applied to the popular imageclassification networks and datasets, our experimental results show that MUTEoffers better generalization and defense against the noises and adversarialattacks over the existing solutions.
-{{< /details >}}
-
->**_2019-10-01_**
-
-[**Efficient Cyber Attacks Detection in Industrial Control Systems Using Lightweight Neural Networks and PCA**](http://arxiv.org/abs/1907.01216v2)
-
-*Moshe Kravchik, Asaf Shabtai*
-
-{{< details "abstract" >}} abstract: Industrial control systems (ICSs) are widely used and vital to industry andsociety. Their failure can have severe impact on both economics and human life.Hence, these systems have become an attractive target for attacks, bothphysical and cyber. A number of attack detection methods have been proposed,however they are characterized by a low detection rate, a substantial falsepositive rate, or are system specific. In this paper, we study an attackdetection method based on simple and lightweight neural networks, namely, 1Dconvolutions and autoencoders. We apply these networks to both the time andfrequency domains of the collected data and discuss pros and cons of eachapproach. We evaluate the suggested method on three popular public datasets andachieve detection rates matching or exceeding previously published detectionresults, while featuring small footprint, short training and detection times,and generality. We also demonstrate the effectiveness of PCA, which, givenproper data preprocessing and feature selection, can provide high attackdetection scores in many settings. Finally, we study the proposed method'srobustness against adversarial attacks, that exploit inherent blind spots ofneural networks to evade detection while achieving their intended physicaleffect. Our results show that the proposed method is robust to such evasionattacks: in order to evade detection, the attacker is forced to sacrifice thedesired physical impact on the system. This finding suggests that neuralnetworks trained under the constraints of the laws of physics can be trustedmore than networks trained under more flexible conditions.
-{{< /details >}}
-
->**_2019-09-26_**
-
-[**Self-Adaptive Soft Voice Activity Detection using Deep Neural Networks for Robust Speaker Verification**](http://arxiv.org/abs/1909.11886v1)
-
-*Youngmoon Jung, Yeunju Choi, Hoirin Kim*
-
-{{< details "abstract" >}} abstract: Voice activity detection (VAD), which classifies frames as speech ornon-speech, is an important module in many speech applications includingspeaker verification. In this paper, we propose a novel method, calledself-adaptive soft VAD, to incorporate a deep neural network (DNN)-based VADinto a deep speaker embedding system. The proposed method is a combination ofthe following two approaches. The first approach is soft VAD, which performs asoft selection of frame-level features extracted from a speaker featureextractor. The frame-level features are weighted by their corresponding speechposteriors estimated from the DNN-based VAD, and then aggregated to generate aspeaker embedding. The second approach is self-adaptive VAD, which fine-tunesthe pre-trained VAD on the speaker verification data to reduce the domainmismatch. Here, we introduce two unsupervised domain adaptation (DA) schemes,namely speech posterior-based DA (SP-DA) and joint learning-based DA (JL-DA).Experiments on a Korean speech database demonstrate that the verificationperformance is improved significantly in real-world environments by usingself-adaptive soft VAD.
-{{< /details >}}
-
->**_2019-09-20_**
-
-[**Writer-Aware CNN for Parsimonious HMM-Based Offline Handwritten Chinese Text Recognition**](http://arxiv.org/abs/1812.09809v2)
-
-*Zi-Rui Wang, Jun Du, Jia-Ming Wang*
-
-{{< details "abstract" >}} abstract: Recently, the hybrid convolutional neural network hidden Markov model(CNN-HMM) has been introduced for offline handwritten Chinese text recognition(HCTR) and has achieved state-of-the-art performance. However, modeling each ofthe large vocabulary of Chinese characters with a uniform and fixed number ofhidden states requires high memory and computational costs and makes the tensof thousands of HMM state classes confusing. Another key issue of CNN-HMM forHCTR is the diversified writing style, which leads to model strain and asignificant performance decline for specific writers. To address these issues,we propose a writer-aware CNN based on parsimonious HMM (WCNN-PHMM). First,PHMM is designed using a data-driven state-tying algorithm to greatly reducethe total number of HMM states, which not only yields a compact CNN by statesharing of the same or similar radicals among different Chinese characters butalso improves the recognition accuracy due to the more accurate modeling oftied states and the lower confusion among them. Second, WCNN integrates eachconvolutional layer with one adaptive layer fed by a writer-dependent vector,namely, the writer code, to extract the irrelevant variability in writerinformation to improve recognition performance. The parameters ofwriter-adaptive layers are jointly optimized with other network parameters inthe training stage, while a multiple-pass decoding strategy is adopted to learnthe writer code and generate recognition results. Validated on the ICDAR 2013competition of CASIA-HWDB database, the more compact WCNN-PHMM of a 7360-classvocabulary can achieve a relative character error rate (CER) reduction of 16.6%over the conventional CNN-HMM without considering language modeling. Byadopting a powerful hybrid language model (N-gram language model and recurrentneural network language model), the CER of WCNN-PHMM is reduced to 3.17%.
-{{< /details >}}
-
->**_2019-09-17_**
-
-[**A Data-Center FPGA Acceleration Platform for Convolutional Neural Networks**](http://arxiv.org/abs/1909.07973v1)
-
-*Xiaoyu Yu, Yuwei Wang, Jie Miao, Ephrem Wu, Heng Zhang, Yu Meng, Bo Zhang, Biao Min, Dewei Chen, Jianlin Gao*
-
-{{< details "abstract" >}} abstract: Intensive computation is entering data centers with multiple workloads ofdeep learning. To balance the compute efficiency, performance, and total costof ownership (TCO), the use of a field-programmable gate array (FPGA) withreconfigurable logic provides an acceptable acceleration capacity and iscompatible with diverse computation-sensitive tasks in the cloud. In thispaper, we develop an FPGA acceleration platform that leverages a unifiedframework architecture for general-purpose convolutional neural network (CNN)inference acceleration at a data center. To overcome the computation bound,4,096 DSPs are assembled and shaped as supertile units (SUs) for differenttypes of convolution, which provide up to 4.2 TOP/s 16-bit fixed-pointperformance at 500 MHz. The interleaved-task-dispatching method is proposed tomap the computation across the SUs, and the memory bound is solved by adispatching-assembling buffering model and broadcast caches. For variousnon-convolution operators, a filter processing unit is designed forgeneral-purpose filter-like/pointwise operators. In the experiment, theperformances of CNN models running on server-class CPUs, a GPU, and an FPGA arecompared. The results show that our design achieves the best FPGA peakperformance and a throughput at the same level as that of the state-of-the-artGPU in data centers, with more than 50 times lower latency.
-{{< /details >}}
-
->**_2019-08-07_**
-
-[**Is artificial data useful for biomedical Natural Language Processing algorithms?**](http://arxiv.org/abs/1907.01055v2)
-
-*Zixu Wang, Julia Ive, Sumithra Velupillai, Lucia Specia*
-
-{{< details "abstract" >}} abstract: A major obstacle to the development of Natural Language Processing (NLP)methods in the biomedical domain is data accessibility. This problem can beaddressed by generating medical data artificially. Most previous studies havefocused on the generation of short clinical text, and evaluation of the datautility has been limited. We propose a generic methodology to guide thegeneration of clinical text with key phrases. We use the artificial data asadditional training data in two key biomedical NLP tasks: text classificationand temporal relation extraction. We show that artificially generated trainingdata used in conjunction with real training data can lead to performance boostsfor data-greedy neural network algorithms. We also demonstrate the usefulnessof the generated data for NLP setups where it fully replaces real trainingdata.
-{{< /details >}}
-
 >**_2019-07-08_**
 
 [**Stealing Neural Networks via Timing Side Channels**](http://arxiv.org/abs/1812.11720v4)
@@ -3651,15 +3381,6 @@ title: "Arxiv Paper"
 *Vasisht Duddu, Debasis Samanta, D Vijay Rao, Valentina E. Balas*
 
 {{< details "abstract" >}} abstract: Deep learning is gaining importance in many applications. However, NeuralNetworks face several security and privacy threats. This is particularlysignificant in the scenario where Cloud infrastructures deploy a service withNeural Network model at the back end. Here, an adversary can extract the NeuralNetwork parameters, infer the regularization hyperparameter, identify if a datapoint was part of the training data, and generate effective transferableadversarial examples to evade classifiers. This paper shows how a NeuralNetwork model is susceptible to timing side channel attack. In this paper, ablack box Neural Network extraction attack is proposed by exploiting the timingside channels to infer the depth of the network. Although, constructing anequivalent architecture is a complex search problem, it is shown howReinforcement Learning with knowledge distillation can effectively reduce thesearch space to infer a target model. The proposed approach has been testedwith VGG architectures on CIFAR10 data set. It is observed that it is possibleto reconstruct substitute models with test accuracy close to the target modelsand the proposed approach is scalable and independent of type of Neural Networkarchitectures.
-{{< /details >}}
-
->**_2019-06-27_**
-
-[**Training Models to Extract Treatment Plans from Clinical Notes Using Contents of Sections with Headings**](http://arxiv.org/abs/1906.11930v1)
-
-*Ananya Poddar, Bharath Dandala, Murthy Devarakonda*
-
-{{< details "abstract" >}} abstract: Objective: Using natural language processing (NLP) to find sentences thatstate treatment plans in a clinical note, would automate plan extraction andwould further enable their use in tools that help providers and care managers.However, as in the most NLP tasks on clinical text, creating gold standard totrain and test NLP models is tedious and expensive. Fortuitously, sometimes butnot always clinical notes contain sections with a heading that identifies thesection as a plan. Leveraging contents of such labeled sections as a noisytraining data, we assessed accuracy of NLP models trained with the data.  Methods: We used common variations of plan headings and rule-based heuristicsto find plan sections with headings in clinical notes, and we extractedsentences from them and formed a noisy training data of plan sentences. Wetrained Support Vector Machine (SVM) and Convolutional Neural Network (CNN)models with the data. We measured accuracy of the trained models on the noisydataset using ten-fold cross validation and separately on a set-aside manuallyannotated dataset.  Results: About 13% of 117,730 clinical notes contained treatment planssections with recognizable headings in the 1001 longitudinal patient recordsthat were obtained from Cleveland Clinic under an IRB approval. We were able toextract and create a noisy training data of 13,492 plan sentences from theclinical notes. CNN achieved best F measures, 0.91 and 0.97 in thecross-validation and set-aside evaluation experiments respectively. SVMslightly underperformed with F measures of 0.89 and 0.96 in the sameexperiments.  Conclusion: Our study showed that the training supervised learning modelsusing noisy plan sentences was effective in identifying them in all clinicalnotes. More broadly, sections with informal headings in clinical notes can be agood source for generating effective training data.
 {{< /details >}}
 
 >**_2019-06-22_**
