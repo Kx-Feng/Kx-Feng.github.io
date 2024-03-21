@@ -4140,24 +4140,6 @@ title: "Arxiv Paper"
 {{< details "abstract" >}} abstract: We demonstrate the potential of Deep Learning methods for measurements ofcosmological parameters from density fields, focusing on the extraction ofnon-Gaussian information. We consider weak lensing mass maps as our dataset. Weaim for our method to be able to distinguish between five models, which werechosen to lie along the $\sigma_8$ - $\Omega_m$ degeneracy, and have nearly thesame two-point statistics. We design and implement a Deep Convolutional NeuralNetwork (DCNN) which learns the relation between five cosmological models andthe mass maps they generate. We develop a new training strategy which ensuresthe good performance of the network for high levels of noise. We compare theperformance of this approach to commonly used non-Gaussian statistics, namelythe skewness and kurtosis of the convergence maps. We find that ourimplementation of DCNN outperforms the skewness and kurtosis statistics,especially for high noise levels. The network maintains the mean discriminationefficiency greater than $85\%$ even for noise levels corresponding to groundbased lensing observations, while the other statistics perform worse in thissetting, achieving efficiency less than $70\%$. This demonstrates the abilityof CNN-based methods to efficiently break the $\sigma_8$ - $\Omega_m$degeneracy with weak lensing mass maps alone. We discuss the potential of thismethod to be applied to the analysis of real weak lensing data and otherdatasets.
 {{< /details >}}
 
->**_2017-06-23_**
-
-[**TimeNet: Pre-trained deep recurrent neural network for time series classification**](http://arxiv.org/abs/1706.08838v1)
-
-*Pankaj Malhotra, Vishnu TV, Lovekesh Vig, Puneet Agarwal, Gautam Shroff*
-
-{{< details "abstract" >}} abstract: Inspired by the tremendous success of deep Convolutional Neural Networks asgeneric feature extractors for images, we propose TimeNet: a deep recurrentneural network (RNN) trained on diverse time series in an unsupervised mannerusing sequence to sequence (seq2seq) models to extract features from timeseries. Rather than relying on data from the problem domain, TimeNet attemptsto generalize time series representation across domains by ingesting timeseries from several domains simultaneously. Once trained, TimeNet can be usedas a generic off-the-shelf feature extractor for time series. Therepresentations or embeddings given by a pre-trained TimeNet are found to beuseful for time series classification (TSC). For several publicly availabledatasets from UCR TSC Archive and an industrial telematics sensor data fromvehicles, we observe that a classifier learned over the TimeNet embeddingsyields significantly better performance compared to (i) a classifier learnedover the embeddings given by a domain-specific RNN, as well as (ii) a nearestneighbor classifier based on Dynamic Time Warping.
-{{< /details >}}
-
->**_2017-05-15_**
-
-[**Mosquito Detection with Neural Networks: The Buzz of Deep Learning**](http://arxiv.org/abs/1705.05180v1)
-
-*Ivan Kiskin, Bernardo Pérez Orozco, Theo Windebank, Davide Zilli, Marianne Sinka, Kathy Willis, Stephen Roberts*
-
-{{< details "abstract" >}} abstract: Many real-world time-series analysis problems are characterised by scarcedata. Solutions typically rely on hand-crafted features extracted from the timeor frequency domain allied with classification or regression engines whichcondition on this (often low-dimensional) feature vector. The huge advancesenjoyed by many application domains in recent years have been fuelled by theuse of deep learning architectures trained on large data sets. This paperpresents an application of deep learning for acoustic event detection in achallenging, data-scarce, real-world problem. Our candidate challenge is toaccurately detect the presence of a mosquito from its acoustic signature. Wedevelop convolutional neural networks (CNNs) operating on wavelettransformations of audio recordings. Furthermore, we interrogate the network'spredictive power by visualising statistics of network-excitatory samples. Thesevisualisations offer a deep insight into the relative informativeness ofcomponents in the detection problem. We include comparisons with conventionalclassifiers, conditioned on both hand-tuned and generic features, to stress thestrength of automatic deep feature learning. Detection is achieved withperformance metrics significantly surpassing those of existing algorithmicmethods, as well as marginally exceeding those attained by individual humanexperts.
-{{< /details >}}
-
 >**_2017-04-20_**
 
 [**Embedding Watermarks into Deep Neural Networks**](http://arxiv.org/abs/1701.04082v2)
@@ -4165,42 +4147,6 @@ title: "Arxiv Paper"
 *Yusuke Uchida, Yuki Nagai, Shigeyuki Sakazawa, Shin'ichi Satoh*
 
 {{< details "abstract" >}} abstract: Deep neural networks have recently achieved significant progress. Sharingtrained models of these deep neural networks is very important in the rapidprogress of researching or developing deep neural network systems. At the sametime, it is necessary to protect the rights of shared trained models. To thisend, we propose to use a digital watermarking technology to protectintellectual property or detect intellectual property infringement of trainedmodels. Firstly, we formulate a new problem: embedding watermarks into deepneural networks. We also define requirements, embedding situations, and attacktypes for watermarking to deep neural networks. Secondly, we propose a generalframework to embed a watermark into model parameters using a parameterregularizer. Our approach does not hurt the performance of networks into whicha watermark is embedded. Finally, we perform comprehensive experiments toreveal the potential of watermarking to deep neural networks as a basis of thisnew problem. We show that our framework can embed a watermark in the situationsof training a network from scratch, fine-tuning, and distilling without hurtingthe performance of a deep neural network. The embedded watermark does notdisappear even after fine-tuning or parameter pruning; the watermark completelyremains even after removing 65% of parameters were pruned. The implementationof this research is: https://github.com/yu4u/dnn-watermark
-{{< /details >}}
-
->**_2017-02-04_**
-
-[**Latent Hinge-Minimax Risk Minimization for Inference from a Small Number of Training Samples**](http://arxiv.org/abs/1702.01293v1)
-
-*Dolev Raviv, Margarita Osadchy*
-
-{{< details "abstract" >}} abstract: Deep Learning (DL) methods show very good performance when trained on large,balanced data sets. However, many practical problems involve imbalanced datasets, or/and classes with a small number of training samples. The performanceof DL methods as well as more traditional classifiers drops significantly insuch settings. Most of the existing solutions for imbalanced problems focus oncustomizing the data for training. A more principled solution is to use mixedHinge-Minimax risk [19] specifically designed to solve binary problems withimbalanced training sets. Here we propose a Latent Hinge Minimax (LHM) risk anda training algorithm that generalizes this paradigm to an ensemble ofhyperplanes that can form arbitrary complex, piecewise linear boundaries. Toextract good features, we combine LHM model with CNN via transfer learning. Tosolve multi-class problem we map pre-trained category-specific LHM classifiersto a multi-class neural network and adjust the weights with very fast tuning.LHM classifier enables the use of unlabeled data in its training and themapping allows for multi-class inference, resulting in a classifier thatperforms better than alternatives when trained on a small number of trainingsamples.
-{{< /details >}}
-
->**_2016-11-01_**
-
-[**Embedding Deep Metric for Person Re-identication A Study Against Large Variations**](http://arxiv.org/abs/1611.00137v1)
-
-*Hailin Shi, Yang Yang, Xiangyu Zhu, Shengcai Liao, Zhen Lei, Weishi Zheng, Stan Z. Li*
-
-{{< details "abstract" >}} abstract: Person re-identification is challenging due to the large variations of pose,illumination, occlusion and camera view. Owing to these variations, thepedestrian data is distributed as highly-curved manifolds in the feature space,despite the current convolutional neural networks (CNN)'s capability of featureextraction. However, the distribution is unknown, so it is difficult to use thegeodesic distance when comparing two samples. In practice, the current deepembedding methods use the Euclidean distance for the training and test. On theother hand, the manifold learning methods suggest to use the Euclidean distancein the local range, combining with the graphical relationship between samples,for approximating the geodesic distance. From this point of view, selectingsuitable positive i.e. intra-class) training samples within a local range iscritical for training the CNN embedding, especially when the data has largeintra-class variations. In this paper, we propose a novel moderate positivesample mining method to train robust CNN for person re-identification, dealingwith the problem of large variation. In addition, we improve the learning by ametric weight constraint, so that the learned metric has a bettergeneralization ability. Experiments show that these two strategies areeffective in learning robust deep metrics for person re-identification, andaccordingly our deep model significantly outperforms the state-of-the-artmethods on several benchmarks of person re-identification. Therefore, the studypresented in this paper may be useful in inspiring new designs of deep modelsfor person re-identification.
-{{< /details >}}
-
->**_2016-09-26_**
-
-[**3D Face Reconstruction by Learning from Synthetic Data**](http://arxiv.org/abs/1609.04387v2)
-
-*Elad Richardson, Matan Sela, Ron Kimmel*
-
-{{< details "abstract" >}} abstract: Fast and robust three-dimensional reconstruction of facial geometricstructure from a single image is a challenging task with numerous applications.Here, we introduce a learning-based approach for reconstructing athree-dimensional face from a single image. Recent face recovery methods relyon accurate localization of key characteristic points. In contrast, theproposed approach is based on a Convolutional-Neural-Network (CNN) whichextracts the face geometry directly from its image. Although such deeparchitectures outperform other models in complex computer vision problems,training them properly requires a large dataset of annotated examples. In thecase of three-dimensional faces, currently, there are no large volume datasets, while acquiring such big-data is a tedious task. As an alternative, wepropose to generate random, yet nearly photo-realistic, facial images for whichthe geometric form is known. The suggested model successfully recovers facialshapes from real images, even for faces with extreme expressions and undervarious lighting conditions.
-{{< /details >}}
-
->**_2016-04-21_**
-
-[**A Novel Approach to Dropped Pronoun Translation**](http://arxiv.org/abs/1604.06285v1)
-
-*Longyue Wang, Zhaopeng Tu, Xiaojun Zhang, Hang Li, Andy Way, Qun Liu*
-
-{{< details "abstract" >}} abstract: Dropped Pronouns (DP) in which pronouns are frequently dropped in the sourcelanguage but should be retained in the target language are challenge in machinetranslation. In response to this problem, we propose a semi-supervised approachto recall possibly missing pronouns in the translation. Firstly, we buildtraining data for DP generation in which the DPs are automatically labelledaccording to the alignment information from a parallel corpus. Secondly, webuild a deep learning-based DP generator for input sentences in decoding whenno corresponding references exist. More specifically, the generation istwo-phase: (1) DP position detection, which is modeled as a sequentiallabelling task with recurrent neural networks; and (2) DP prediction, whichemploys a multilayer perceptron with rich features. Finally, we integrate theabove outputs into our translation system to recall missing pronouns by bothextracting rules from the DP-labelled training data and translating theDP-generated input sentences. Experimental results show that our approachachieves a significant improvement of 1.58 BLEU points in translationperformance with 66% F-score for DP generation accuracy.
 {{< /details >}}
 
 >**_2016-02-17_**
@@ -4211,58 +4157,3 @@ title: "Arxiv Paper"
 
 {{< details "abstract" >}} abstract: In practice, training language models for individual authors is oftenexpensive because of limited data resources. In such cases, Neural NetworkLanguage Models (NNLMs), generally outperform the traditional non-parametricN-gram models. Here we investigate the performance of a feed-forward NNLM on anauthorship attribution problem, with moderate author set size and relativelylimited data. We also consider how the text topics impact performance. Comparedwith a well-constructed N-gram baseline method with Kneser-Ney smoothing, theproposed method achieves nearly 2:5% reduction in perplexity and increasesauthor classification accuracy by 3:43% on average, given as few as 5 testsentences. The performance is very competitive with the state of the art interms of accuracy and demand on test data. The source code, preprocesseddatasets, a detailed description of the methodology and results are availableat https://github.com/zge/authorship-attribution.
 {{< /details >}}
-
->**_2016-02-01_**
-
-[**An Iterative Deep Learning Framework for Unsupervised Discovery of Speech Features and Linguistic Units with Applications on Spoken Term Detection**](http://arxiv.org/abs/1602.00426v1)
-
-*Cheng-Tao Chung, Cheng-Yu Tsai, Hsiang-Hung Lu, Chia-Hsiang Liu, Hung-yi Lee, Lin-shan Lee*
-
-{{< details "abstract" >}} abstract: In this work we aim to discover high quality speech features and linguisticunits directly from unlabeled speech data in a zero resource scenario. Theresults are evaluated using the metrics and corpora proposed in the ZeroResource Speech Challenge organized at Interspeech 2015. A Multi-layeredAcoustic Tokenizer (MAT) was proposed for automatic discovery of multiple setsof acoustic tokens from the given corpus. Each acoustic token set is specifiedby a set of hyperparameters that describe the model configuration. These setsof acoustic tokens carry different characteristics fof the given corpus and thelanguage behind, thus can be mutually reinforced. The multiple sets of tokenlabels are then used as the targets of a Multi-target Deep Neural Network(MDNN) trained on low-level acoustic features. Bottleneck features extractedfrom the MDNN are then used as the feedback input to the MAT and the MDNNitself in the next iteration. We call this iterative deep learning frameworkthe Multi-layered Acoustic Tokenizing Deep Neural Network (MAT-DNN), whichgenerates both high quality speech features for the Track 1 of the Challengeand acoustic tokens for the Track 2 of the Challenge. In addition, we performedextra experiments on the same corpora on the application of query-by-examplespoken term detection. The experimental results showed the iterative deeplearning framework of MAT-DNN improved the detection performance due to betterunderlying speech features and acoustic tokens.
-{{< /details >}}
-
->**_2015-11-17_**
-
-[**When Naïve Bayes Nearest Neighbours Meet Convolutional Neural Networks**](http://arxiv.org/abs/1511.03853v2)
-
-*Ilja Kuzborskij, Fabio Maria Carlucci, Barbara Caputo*
-
-{{< details "abstract" >}} abstract: Since Convolutional Neural Networks (CNNs) have become the leading learningparadigm in visual recognition, Naive Bayes Nearest Neighbour (NBNN)-basedclassifiers have lost momentum in the community. This is because (1) suchalgorithms cannot use CNN activations as input features; (2) they cannot beused as final layer of CNN architectures for end-to-end training , and (3) theyare generally not scalable and hence cannot handle big data. This paperproposes a framework that addresses all these issues, thus bringing back NBNNson the map. We solve the first by extracting CNN activations from local patchesat multiple scale levels, similarly to [1]. We address simultaneously thesecond and third by proposing a scalable version of Naive Bayes Non-linearLearning (NBNL, [2]). Results obtained using pre-trained CNNs on standard sceneand domain adaptation databases show the strength of our approach, opening anew season for NBNNs.
-{{< /details >}}
-
->**_2014-11-18_**
-
-[**Do More Dropouts in Pool5 Feature Maps for Better Object Detection**](http://arxiv.org/abs/1409.6911v3)
-
-*Zhiqiang Shen, Xiangyang Xue*
-
-{{< details "abstract" >}} abstract: Deep Convolutional Neural Networks (CNNs) have gained great success in imageclassification and object detection. In these fields, the outputs of all layersof CNNs are usually considered as a high dimensional feature vector extractedfrom an input image and the correspondence between finer level feature vectorsand concepts that the input image contains is all-important. However, fewerstudies focus on this deserving issue. On considering the correspondence, wepropose a novel approach which generates an edited version for each originalCNN feature vector by applying the maximum entropy principle to abandonparticular vectors. These selected vectors correspond to the unfriendlyconcepts in each image category. The classifier trained from merged featuresets can significantly improve model generalization of individual categorieswhen training data is limited. The experimental results forclassification-based object detection on canonical datasets including VOC 2007(60.1%), 2010 (56.4%) and 2012 (56.3%) show obvious improvement in mean averageprecision (mAP) with simple linear support vector machines.
-{{< /details >}}
-
->**_2014-09-30_**
-
-[**An agent-driven semantical identifier using radial basis neural networks and reinforcement learning**](http://arxiv.org/abs/1409.8484v1)
-
-*Christian Napoli, Giuseppe Pappalardo, Emiliano Tramontana*
-
-{{< details "abstract" >}} abstract: Due to the huge availability of documents in digital form, and the deceptionpossibility raise bound to the essence of digital documents and the way theyare spread, the authorship attribution problem has constantly increased itsrelevance. Nowadays, authorship attribution,for both information retrieval andanalysis, has gained great importance in the context of security, trust andcopyright preservation. This work proposes an innovative multi-agent drivenmachine learning technique that has been developed for authorship attribution.By means of a preprocessing for word-grouping and time-period related analysisof the common lexicon, we determine a bias reference level for the recurrencefrequency of the words within analysed texts, and then train a Radial BasisNeural Networks (RBPNN)-based classifier to identify the correct author. Themain advantage of the proposed approach lies in the generality of the semanticanalysis, which can be applied to different contexts and lexical domains,without requiring any modification. Moreover, the proposed system is able toincorporate an external input, meant to tune the classifier, and thenself-adjust by means of continuous learning reinforcement.
-{{< /details >}}
-
->**_2010-09-25_**
-
-[**RGANN: An Efficient Algorithm to Extract Rules from ANNs**](http://arxiv.org/abs/1009.4962v1)
-
-*S. M. Kamruzzaman*
-
-{{< details "abstract" >}} abstract: This paper describes an efficient rule generation algorithm, called rulegeneration from artificial neural networks (RGANN) to generate symbolic rulesfrom ANNs. Classification rules are sought in many areas from automaticknowledge acquisition to data mining and ANN rule extraction. This is becauseclassification rules possess some attractive features. They are explicit,understandable and verifiable by domain experts, and can be modified, extendedand passed on as modular knowledge. A standard three-layer feedforward ANN isthe basis of the algorithm. A four-phase training algorithm is proposed forbackpropagation learning. Comparing them to the symbolic rules generated byother methods supports explicitness of the generated rules. Generated rules arecomparable with other methods in terms of number of rules, average number ofconditions for a rule, and predictive accuracy. Extensive experimental studieson several benchmarks classification problems, including breast cancer, wine,season, golf-playing, and lenses classification demonstrate the effectivenessof the proposed approach with good generalization ability.
-{{< /details >}}
-
->**_2007-07-29_**
-
-[**A Leaf Recognition Algorithm for Plant Classification Using Probabilistic Neural Network**](http://arxiv.org/abs/0707.4289v1)
-
-*Stephen Gang Wu, Forrest Sheng Bao, Eric You Xu, Yu-Xuan Wang, Yi-Fan Chang, Qiao-Liang Xiang*
-
-{{< details "abstract" >}} abstract: In this paper, we employ Probabilistic Neural Network (PNN) with image anddata processing techniques to implement a general purpose automated leafrecognition algorithm. 12 leaf features are extracted and orthogonalized into 5principal variables which consist the input vector of the PNN. The PNN istrained by 1800 leaves to classify 32 kinds of plants with an accuracy greaterthan 90%. Compared with other approaches, our algorithm is an accurateartificial intelligence approach which is fast in execution and easy inimplementation.
-{{< /details >}}
-
