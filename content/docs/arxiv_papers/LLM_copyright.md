@@ -15,13 +15,6 @@ title: "LLM with Copyright"
 {{< details "abstract" >}} abstract: The proliferation of large language models (LLMs) in generating contentraises concerns about text copyright. Watermarking methods, particularlylogit-based approaches, embed imperceptible identifiers into text to addressthese challenges. However, the widespread use of watermarking across diverseLLMs has led to an inevitable issue known as watermark collision during commontasks like question answering and paraphrasing. This study focuses on dualwatermark collisions, where two watermarks are present simultaneously in thesame text. The research demonstrates that watermark collision poses a threat todetection performance for detectors of both upstream and downstream watermarkalgorithms.
 {{< /details >}}
 
-[**SciAssess: Benchmarking LLM Proficiency in Scientific Literature Analysis**](http://arxiv.org/abs/2403.01976v2)
-
-*Hengxing Cai, Xiaochen Cai, Junhan Chang, Sihang Li, Lin Yao, Changxin Wang, Zhifeng Gao, Hongshuai Wang, Yongge Li, Mujie Lin, Shuwen Yang, Jiankun Wang, Yuqi Yin, Yaqi Li, Linfeng Zhang, Guolin Ke*
-
-{{< details "abstract" >}} abstract: Recent breakthroughs in Large Language Models (LLMs) have revolutionizednatural language understanding and generation, igniting a surge of interest inleveraging these technologies in the field of scientific literature analysis.Existing benchmarks, however, inadequately evaluate the proficiency of LLMs inscientific literature analysis, especially in scenarios involving complexcomprehension and multimodal data. In response, we introduced SciAssess, abenchmark tailored for the in-depth analysis of scientific literature, craftedto provide a thorough assessment of LLMs' efficacy. SciAssess focuses onevaluating LLMs' abilities in memorization, comprehension, and analysis withinthe context of scientific literature analysis. It includes representative tasksfrom diverse scientific fields, such as general chemistry, organic materials,and alloy materials. And rigorous quality control measures ensure itsreliability in terms of correctness, anonymization, and copyright compliance.SciAssess evaluates leading LLMs, including GPT-4, GPT-3.5, and Gemini,identifying their strengths and aspects for improvement and supporting theongoing development of LLM applications in scientific literature analysis.SciAssess and its resources are made available at https://sci-assess.github.io,offering a valuable tool for advancing LLM capabilities in scientificliterature analysis.
-{{< /details >}}
-
 >**_2024-03-13_**
 
 [**Second-Order Information Matters: Revisiting Machine Unlearning for Large Language Models**](http://arxiv.org/abs/2403.10557v1)
