@@ -6,14 +6,6 @@ title: "LLM with Copyright"
  <!--more-->
 # Arxiv Papers: LLM with Copyright
 
->**_2024-04-22_**
-
-[**Does Your Neural Code Completion Model Use My Code? A Membership Inference Approach**](http://arxiv.org/abs/2404.14296v1)
-
-*Yao Wan, Guanghua Wan, Shijie Zhang, Hongyu Zhang, Yulei Sui, Pan Zhou, Hai Jin, Lichao Sun*
-
-{{< details "abstract" >}} abstract: Recent years have witnessed significant progress in developing deeplearning-based models for automated code completion. Although using source codein GitHub has been a common practice for training deep-learning-based modelsfor code completion, it may induce some legal and ethical issues such ascopyright infringement. In this paper, we investigate the legal and ethicalissues of current neural code completion models by answering the followingquestion: Is my code used to train your neural code completion model? To thisend, we tailor a membership inference approach (termed CodeMI) that wasoriginally crafted for classification tasks to a more challenging task of codecompletion. In particular, since the target code completion models perform asopaque black boxes, preventing access to their training data and parameters, weopt to train multiple shadow models to mimic their behavior. The acquiredposteriors from these shadow models are subsequently employed to train amembership classifier. Subsequently, the membership classifier can beeffectively employed to deduce the membership status of a given code samplebased on the output of a target code completion model. We comprehensivelyevaluate the effectiveness of this adapted approach across a diverse array ofneural code completion models, (i.e., LSTM-based, CodeGPT, CodeGen, andStarCoder). Experimental results reveal that the LSTM-based and CodeGPT modelssuffer the membership leakage issue, which can be easily detected by ourproposed membership inference approach with an accuracy of 0.842, and 0.730,respectively. Interestingly, our experiments also show that the data membershipof current large language models of code, e.g., CodeGen and StarCoder, isdifficult to detect, leaving amper space for further improvement. Finally, wealso try to explain the findings from the perspective of model memorization.
-{{< /details >}}
 
 >**_2024-04-17_**
 
