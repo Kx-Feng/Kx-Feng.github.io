@@ -1,0 +1,21 @@
+{% assign p = include.pub %}
+{%- comment -%}
+  The title carries the link. Prefer the official venue page, then arXiv, then
+  code; if none is set the title renders as plain text.
+{%- endcomment -%}
+{%- assign primary = "" -%}
+{%- if p.paper and p.paper != "" -%}{%- assign primary = p.paper -%}
+{%- elsif p.arxiv and p.arxiv != "" -%}{%- assign primary = p.arxiv -%}
+{%- elsif p.code and p.code != "" -%}{%- assign primary = p.code -%}
+{%- endif -%}
+<li class="pub">
+  <h3 class="pub__title">
+    {% if p.venue_short and p.venue_short != "" %}<span class="badge">{{ p.venue_short }}</span>{% endif %}
+    {% if primary != "" %}<a href="{{ primary }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+  </h3>
+  <p class="pub__meta">
+    {% assign names = p.authors | split: ", " %}
+    {% for n in names %}{% if n == site.author.name %}<strong>{{ n }}</strong>{% else %}{{ n }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+    {%- if p.note and p.note != "" %} · <em class="pub__note">{{ p.note }}</em>{% endif -%}
+  </p>
+</li>

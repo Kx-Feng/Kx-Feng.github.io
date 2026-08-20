@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Page backgrounds
+   --------------------------------------------------------------------------
+   Pick one with `background:` in _config.yml. Every pattern is pure CSS
+   (no image files), fixed to the viewport, and tuned to stay far below the
+   contrast of body text so it reads as texture, not decoration.
+
+   Tune the intensity in one place: --pat and --pat-strong below.
+   ========================================================================== */
+
+:root {
+  --pat:        rgba(20, 30, 25, 0.055);
+  --pat-strong: rgba(20, 30, 25, 0.11);
+  --pat-warm:   rgba(150, 60, 40, 0.07);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pat:        rgba(210, 235, 220, 0.055);
+    --pat-strong: rgba(210, 235, 220, 0.11);
+    --pat-warm:   rgba(240, 150, 120, 0.07);
+  }
+}
+
+body {
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+/* --- go: 围棋 --------------------------------------------------------------
+   A goban grid with star points landing exactly on intersections.
+   The quietest of the set; the default recommendation.                      */
+[data-bg="go"] body {
+  background-image:
+    radial-gradient(circle at 92px 92px, var(--pat-strong) 2.5px, transparent 3.2px),
+    linear-gradient(var(--pat) 1px, transparent 1px),
+    linear-gradient(90deg, var(--pat) 1px, transparent 1px);
+  background-size: 184px 184px, 46px 46px, 46px 46px;
+  background-position: 0 0;
+}
+
+/* --- contour: 长跑 / 地图等高线 --------------------------------------------
+   Layered concentric rings read as a topographic map.                       */
+[data-bg="contour"] body {
+  background-image:
+    repeating-radial-gradient(circle at 12% 18%, transparent 0 26px, var(--pat) 26px 27px),
+    repeating-radial-gradient(circle at 78% 44%, transparent 0 32px, var(--pat) 32px 33px),
+    repeating-radial-gradient(circle at 34% 88%, transparent 0 29px, var(--pat) 29px 30px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* --- paper: 文学 / 稿纸 ----------------------------------------------------
+   Fine manuscript squares with a heavier rule every ten cells.              */
+[data-bg="paper"] body {
+  background-image:
+    linear-gradient(var(--pat-strong) 1px, transparent 1px),
+    linear-gradient(90deg, var(--pat-strong) 1px, transparent 1px),
+    linear-gradient(var(--pat) 1px, transparent 1px),
+    linear-gradient(90deg, var(--pat) 1px, transparent 1px);
+  background-size: 320px 320px, 320px 320px, 32px 32px, 32px 32px;
+}
+
+/* --- staff: 音乐 / 五线谱 --------------------------------------------------
+   Five-line groups with a rest between systems.                             */
+[data-bg="staff"] body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--pat) 0 1px, transparent 1px 11px,
+    var(--pat) 11px 12px, transparent 12px 22px,
+    var(--pat) 22px 23px, transparent 23px 33px,
+    var(--pat) 33px 34px, transparent 34px 44px,
+    var(--pat) 44px 45px, transparent 45px 108px
+  );
+  background-size: 100% 108px;
+}
+
+/* --- film: 电影 / 胶片齿孔 -------------------------------------------------
+   Perforation strips hug the viewport edges and stay out of the text.       */
+[data-bg="film"] body {
+  background-image:
+    repeating-linear-gradient(to bottom, var(--pat-strong) 0 17px, transparent 17px 36px),
+    repeating-linear-gradient(to bottom, var(--pat-strong) 0 17px, transparent 17px 36px);
+  background-size: 22px 100%, 22px 100%;
+  background-position: 20px 0, right 20px top;
+  background-repeat: repeat-y, repeat-y;
+}
+
+/* --- pixel: 游戏 / 动画 ----------------------------------------------------
+   A CRT-ish dot matrix.                                                     */
+[data-bg="pixel"] body {
+  background-image: radial-gradient(circle, var(--pat-strong) 1px, transparent 1.4px);
+  background-size: 14px 14px;
+}
+
+/* --- table: 乒乓球 ---------------------------------------------------------
+   The table's centre line and edge lines, abstracted.                       */
+[data-bg="table"] body {
+  background-image:
+    linear-gradient(90deg, transparent 0 calc(50% - 1px), var(--pat) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)),
+    linear-gradient(var(--pat-strong) 2px, transparent 2px),
+    linear-gradient(90deg, var(--pat-strong) 2px, transparent 2px);
+  background-size: 100% 100%, 100% 264px, 264px 100%;
+  background-repeat: no-repeat, repeat-y, repeat-x;
+}
+
+/* --- aurora: 纯 fancy ------------------------------------------------------
+   Soft mesh gradient. The most decorative option; also the most likely to
+   fight with your text, so it is kept very low in alpha.                    */
+[data-bg="aurora"] body {
+  background-image:
+    radial-gradient(60% 50% at 12% 8%,  var(--pat-warm) 0%, transparent 70%),
+    radial-gradient(55% 45% at 88% 22%, var(--pat-strong) 0%, transparent 70%),
+    radial-gradient(70% 55% at 50% 96%, var(--pat) 0%, transparent 70%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* --- none ------------------------------------------------------------------ */
+[data-bg="none"] body { background-image: none; }
+
+/* Narrow screens: edge-anchored patterns crowd the text column. */
+@media (max-width: 700px) {
+  [data-bg="film"] body,
+  [data-bg="table"] body { background-image: none; }
+}
+
+/* Respect users who ask for less visual noise, and keep print clean. */
+@media print {
+  body { background-image: none !important; }
+}

@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% unless page.hide_title %}
+<header class="page-header">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.excerpt_text %}<p class="page-lede">{{ page.excerpt_text }}</p>{% endif %}
+</header>
+{% endunless %}
+<div class="prose">
+  {{ content }}
+</div>

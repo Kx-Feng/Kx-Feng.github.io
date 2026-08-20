@@ -1,0 +1,46 @@
+{% assign a = site.author %}
+<aside class="profile">
+  <img class="profile__avatar" src="{{ a.avatar | relative_url }}" alt="{{ a.name }}"
+       onerror="this.onerror=null;this.src='{{ '/assets/img/profile-placeholder.svg' | relative_url }}';">
+
+  <h1 class="profile__name">{{ a.name }}{% if a.name_zh %} <span class="profile__name-zh">{{ a.name_zh }}</span>{% endif %}</h1>
+
+  <p class="profile__role">
+    {{ a.position }}<br>
+    {{ a.affiliation }}<br>
+    <strong>{{ a.university }}</strong>
+  </p>
+
+  {% if a.bio %}<p class="profile__bio">{{ a.bio }}</p>{% endif %}
+
+  <ul class="profile__links">
+    {% if a.location %}
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>{{ a.location }}</li>
+    {% endif %}
+    {% if a.email %}
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg><a href="mailto:{{ a.email }}">{{ a.email }}</a></li>
+    {% endif %}
+    {% if a.scholar != "" %}
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1.5 8.5 12 14l10.5-5.5L12 3z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg><a href="{{ a.scholar }}">Google Scholar</a></li>
+    {% endif %}
+    {% if a.semantic != "" %}
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c3-1 5-3 8-8"/></svg><a href="{{ a.semantic }}">Semantic Scholar</a></li>
+    {% endif %}
+    {% if a.dblp != "" %}
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h9l5 5v11H5z"/><path d="M14 4v5h5"/></svg><a href="{{ a.dblp }}">DBLP</a></li>
+    {% endif %}
+    {% if a.orcid != "" %}
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9v7M9 6.5v.01M13 16V9h2a3.5 3.5 0 0 1 0 7z"/></svg><a href="{{ a.orcid }}">ORCID</a></li>
+    {% endif %}
+    {% if a.github != "" %}
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2.2-6-2.7m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.7 11.7 0 0 0-6 0C6.7 3.1 5.7 3.4 5.7 3.4a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.3 9.8c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><a href="{{ a.github }}">GitHub</a></li>
+    {% endif %}
+    {% if a.twitter != "" %}
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l7.2 9.6L4.4 20h2l5.6-6 4.5 6H21l-7.5-10L20.2 4h-2l-5.2 5.6L8.8 4z"/></svg><a href="{{ a.twitter }}">X / Twitter</a></li>
+    {% endif %}
+    {% if a.linkedin != "" %}
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M8 10.5V17M8 7.5v.01M12 17v-3.7c0-1.4 2.2-1.5 2.2 0V17"/></svg><a href="{{ a.linkedin }}">LinkedIn</a></li>
+    {% endif %}
+  </ul>
+
+</aside>

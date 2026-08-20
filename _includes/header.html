@@ -1,0 +1,81 @@
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="masthead__brand" href="#top">{{ site.author.name }}</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-toggle__label" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="masthead__nav" aria-label="Main">
+      <ul>
+        {% for item in site.data.navigation.main %}
+        <li><a href="#{{ item.id }}" data-nav="{{ item.id }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+/* Single-page navigation: highlight the section currently in view, and close
+   the mobile menu after a jump. Falls back silently if IntersectionObserver
+   is unavailable. */
+(function () {
+  var links = document.querySelectorAll('.masthead__nav a[data-nav]');
+  if (!links.length) return;
+
+  var byId = {};
+  links.forEach(function (a) { byId[a.dataset.nav] = a; });
+
+  function setActive(id) {
+    links.forEach(function (a) {
+      var on = a.dataset.nav === id;
+      a.classList.toggle('is-active', on);
+      if (on) { a.setAttribute('aria-current', 'true'); }
+      else { a.removeAttribute('aria-current'); }
+    });
+  }
+
+  // Close the mobile menu once a link is followed.
+  var toggle = document.getElementById('nav-toggle');
+  links.forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (toggle) { toggle.checked = false; }
+    });
+  });
+
+  // The name in the masthead returns to the very top of the document.
+  // href="#top" stays as the no-JS fallback.
+  var brand = document.querySelector('.masthead__brand');
+  if (brand) {
+    brand.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      history.replaceState(null, '', location.pathname);
+      setActive(null);
+    });
+  }
+
+  if (!('IntersectionObserver' in window)) return;
+
+  var sections = [];
+  Object.keys(byId).forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) { sections.push(el); }
+  });
+  if (!sections.length) return;
+
+  var visible = new Map();
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { visible.set(e.target.id, e.intersectionRatio); }
+      else { visible.delete(e.target.id); }
+    });
+    if (!visible.size) return;
+    // Topmost visible section wins, so the highlight tracks reading order.
+    var best = sections.filter(function (s) { return visible.has(s.id); })[0];
+    if (best) { setActive(best.id); }
+  }, { rootMargin: '-20% 0px -70% 0px', threshold: [0, 0.25, 0.5, 1] });
+
+  sections.forEach(function (s) { observer.observe(s); });
+})();
+</script>

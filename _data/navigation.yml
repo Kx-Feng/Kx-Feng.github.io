@@ -1,0 +1,11 @@
+# Single-page site: every entry is an in-page anchor.
+# `id` must match the section's id in _pages/about.md.
+main:
+  - title: "About Me"
+    id: about
+  - title: "Research Interests"
+    id: interests
+  - title: "Publications"
+    id: publications
+  - title: "Education"
+    id: education

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#eef0f3"/>
+  <!-- Letter F, Lucida Handwriting, converted to an outline so it renders
+       identically everywhere with no font dependency. -->
+  <path fill="#4fa8e0" transform="translate(8.58 47.55) scale(0.02516 -0.02516)" d="M711 629 573 -62Q554 -157 554 -185Q554 -213 567 -245Q466 -296 382 -296Q330 -296 330 -254Q330 -232 350 -130L501 629H486Q396 629 292 586Q341 692 378.5 722.5Q416 753 498 753H525L645 1351H623Q405 1351 276 1232Q315 1390 411 1443Q479 1480 833 1480H1096Q1390 1480 1585 1532Q1523 1423 1455.5 1386.5Q1388 1350 1248 1350L1160 1351H854L735 753H951Q1152 753 1283 804Q1235 691 1172.5 660.0Q1110 629 927 629Z"/>
+</svg>

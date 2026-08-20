@@ -1,0 +1,83 @@
+# ============================================================
+#  Site settings  —  edit everything in this file first.
+# ============================================================
+
+# --- Identity -----------------------------------------------
+title            : "Xiaoyan Feng"
+subtitle         : "PhD Student, Griffith University"
+description      : >-
+  Xiaoyan Feng, PhD student at Griffith University. Research on watermarking,
+  content provenance, and the security of generative models.
+url              : "https://kx-feng.github.io"   # no trailing slash
+baseurl          : ""                              # e.g. "/homepage" if in a subpath
+repository       : "Kx-Feng/Kx-Feng.github.io"
+
+# --- Author sidebar -----------------------------------------
+author:
+  name           : "Xiaoyan Feng"
+  name_zh        : "冯晓妍"
+  avatar         : "/assets/img/photo.png"
+  position       : "PhD Student"
+  affiliation    : "ICT School"
+  university     : "Griffith University"
+  location       : "Gold Coast, Australia"
+  email          : "xiaoyan.feng@griffithuni.edu.au"
+  # Leave a value blank ("") to hide that link in the sidebar.
+  scholar        : "https://scholar.google.com/citations?user=wolUsiMAAAAJ&hl=en"
+  github         : "https://github.com/Kx-Feng"
+  twitter        : ""
+  linkedin       : ""
+  orcid          : ""
+  semantic       : ""
+  dblp           : ""
+  bio            : watermarking · generative model · content provenance · AI security
+
+# --- Appearance ---------------------------------------------
+# Page background pattern. One of:
+#   go | contour | paper | staff | film | pixel | table | aurora | none
+# See _sass/_backgrounds.scss.
+background       : aurora
+# Shows a floating picker so you can compare patterns live.
+# Set to false (and delete _includes/bg-picker.html) once you've chosen.
+bg_picker        : false
+
+# --- Build --------------------------------------------------
+markdown         : kramdown
+highlighter      : rouge
+permalink        : /:categories/:title/
+timezone         : Asia/Shanghai
+encoding         : utf-8
+sass:
+  style          : compressed
+  sass_dir       : _sass
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github
+
+# --- Collections --------------------------------------------
+collections:
+  publications:
+    output: false      # single-page site: rendered inline, no per-paper pages
+  talks:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      sidebar: true
